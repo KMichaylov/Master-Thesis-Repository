@@ -6,3 +6,4 @@ nltk
 openpyxl
 networkx
 spacy
+xgboost
