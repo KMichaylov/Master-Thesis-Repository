@@ -1,0 +1,272 @@
+Year1,Year,Date,,Version,RELEASE,Changes,By,,Type,General,General Category
++15 years,2021,13/02/2021,4.13.,4.13.2,PATCH,,,,,,
++15 years,2021,13/02/2021,4.13.,4.13.2,PATCH,Pull request #1687: Mark ThreadGroups created by FailOnTimeout as daemon groups,,Rules,,Fix regression,Bug fix
++15 years,2021,13/02/2021,4.13.,4.13.2,PATCH,Pull request $1691: Only create ThreadGroups if FailOnTimeout.lookForStuckThread is true.,,Rules,,Fix regression,Bug fix
++15 years,2021,13/02/2021,4.13.,4.13.2,PATCH,Pull request #1654: Fix for issue #1192: NotSerializableException with AssumptionViolatedException,,Exceptions,,Fix serialization,Bug fix
++14 years,2020,11/10/2020,4.13.,4.13.1,PATCH,,,,,,
++14 years,2020,11/10/2020,4.13.,4.13.1,PATCH,Security fix: TemporaryFolder now limits access to temporary folders on Java 1.7 or later,,"Rules, ",A local information disclosure vulnerability in TemporaryFolder has been fixed. See the published security advisory for details.,Fix local information disclosure vulnerability,Security improvement
++14 years,2020,11/10/2020,4.13.,4.13.1,PATCH,Pull request #1669: Make FrameworkField constructor public,,Test Runners,Make FrameworkField constructor public,Change access modifier,Code redesign
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,,,,,,
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1054: Improved error message for assertArrayEquals when multi-dimensional arrays have different lengths,,Assertions,Improve error message ,Code refactoring,Maintainability improvement
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1154 and #1504 Add assertThrows,,Assertions,,Add functionality,Add support for a new feature
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,-,,,Rename method,Code refactoring,Maintainability improvement
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1300: Show contents of actual array when array lengths differ,,Assertions,,Change implementation,Code redesign
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1315: assertArrayEquals shouldn't throw an NPE when test suites are compiled/run across versions of junit,,Assertions,NullPointerException,Handle exception,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1150: Deprecate Assert#assertThat,,Assertions,,Deprecate method,Deprecate functionality
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1037: BlockJUnit4ClassRunner#createTest now accepts FrameworkMethod,,Test Runners,,Change implementation,Code redesign
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1082: Ensure exceptions from BlockJUnit4ClassRunner.methodBlock() don't result in unrooted tests,,Test Runners,,Fix regression,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1286: Provide better feedback to the user in case of invalid test classes,,Test Runners,Improve exception message ,Code refactoring,Maintainability improvement
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1252: Restore ability use ParentRunner lost in separate class loader,,Test Runners,NullPointerException,Fix regression,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1377: Description produced by Request.classes() shouldn't be null,,Test Runners,,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Issue #1290: Tests expecting AssumptionViolatedException are now correctly marked as passed,,Test Runners,Tests expecting AssumptionViolatedException are now correctly marked as passed,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1465: Provide helpful message if parameter cannot be set.,,Test Runners,Improve exception message ,Code refactoring,Maintainability improvement
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Issue #1329: Support assumptions in @Parameters method,,Test Runners,AssumptionViolatedException,Handle exception,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1449: Parameterized runner reuses TestClass instance,,Test Runners,Reduce memory consumption of parameterized tests by not creating a new instance of TestClass for every test.,Reduce memory consumption,Memory improvement
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,"Pull request #1130: Add Ordering, Orderable and @OrderWith",,Test Runners,,Add functionality,Add support for a new feature
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1408: Suites don't have to be public,,Test Runners,Classes do not need to be public,Fix regression,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1638: Never reorder classes annotated with @FixMethodOrder,,Test Runners,,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1044: Strict verification of resource deletion in TemporaryFolder rule,,Rules,Strict verification of resource deletion in TemporaryFolder rule,Add functionality,Add support for a new feature
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Issue #1100: StopWatch does not need to be abstract.,,Rules,Make abstract class non abstract to be used without the need to extend it,Change access modifier,Code redesign
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Issue #1157: TestName: Make 'name' field volatile,,Rules,Make 'name' field volatile. This should ensure that the name is published even when tests are running in parallel.,Change visibility modifier,Code redesign
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Issue #1223: TemporaryFolder doesn't work for parallel test execution in several JVMs,,Rules,Throw exception when needed,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1305: Add ErrorCollector.checkThrows,,Rules,,Add method,Add support for a new feature
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Issue #1303: Prevent following symbolic links when deleting temporary directories,,Rules,,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Issue #1295: Javadoc for RuleChain contains errors,,Rules,Javadoc for RuleChain contains errors,Fix documentation,Documentation
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1313: RuleChain.around() rejects null arguments,,Rules,"implements a fail-fast strategy. By throwing IllegalArgEx instead of NPE, we allow for better feedback to the final user, as the stacktrace will point to the exact line where the null rule is declared.",Fix throwing wrong exception,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1397: Change generics on ExpectedException.expectCause(),,Rules,Change generics,Fix throwing wrong exception,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1443: ExpectedException.isAnyExceptionExpected() is now public,,Rules,Make method public,Fix throwing wrong exception,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1395: Wrap assumption violations in ErrorCollector,,Rules,Wrap assumption violations,Fix throwing wrong exception,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,-,,Rules,Throw exception when needed,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1402: TemporaryFolder.newFolder(String) supports paths with slashes,,Rules,,Fix regression,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull requests #1406 (part 1) and #1568: Improve error message when TemporaryFolder.newFolder(String) fails,,Rules,"error message ""a folder with the name '<path>' already exists""",Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,-,,Rules,Improve exception message ,Code refactoring,Maintainability improvement
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1406 (part 2): TemporaryFolder.newFolder(String...) supports path separator,,Rules,,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1406 (part 3): TemporaryFolder.newFolder(String...) fails for empty array,,Rules,IllegalArgumentException,Handle exception,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1335: Fix ExternalResource: the test failure could be lost,,Rules,the test failure is lost:,Fix swallowing exception,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1435: @BeforeParam/@AfterParam method annotations for Parameterized tests.,,Rules,This allows having preparation and/or cleanup in tests for specific parameter values.,Add functionality,Add support for a new feature
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1460: Handle assumption violations in the @Parameters method for Parameterized tests.,,Rules,AssumptionViolatedException,Handle exception,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1445 and Pull request #1335: Declarative ordering of rules.,,Rules,,Add functionality,Add support for a new feature
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,-,,Rules,,Deprecate annotation,Deprecate functionality
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,-,,Rules,,Update documentation,Documentation
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1517: Timeout rule destroys its ThreadGroups at the end,,Rules,,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1633: Deprecate ExpectedException.none(),,Rules,,Deprecate method,Deprecate functionality
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1413: Ignore bridge methods when scanning for annotated methods,,Rules,,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1612: Make @ValidateWith only applicable to annotation types,,Rules,@Target(ANNOTATION_TYPE) has been added to @ValidateWith since it's only designed to be applied to another annotation,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1118: Add suite start/finish events to listener,,Run Listener,methods that notify when test suites are about to be started/finished,Add method,Add support for a new feature
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1359: Fixes how MultipleFailureException stack traces are printed,,Exception Testing,Print the stack trace for each caught exception as well,Change implementation,Code redesign
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1376: Initializing MultipleFailureException with an empty list will now fail the test,,Exception Testing,Fix test outcome,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1371: Update MultipleFailureException.assertEmpty() to wrap assumption failure,,Exception Testing,Update MultipleFailureException.assertEmpty() to wrap assumption failure,Change implementation,Code redesign
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Issue #1290: @Test(expected = AssumptionViolatedException.class) passes for AssumptionViolatedException,,Exception Testing,Fix test outcome,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1227: Behave better if the SecurityManager denies access to junit.properties,,JUnit 3 Changes,AccessControlException,Handle exception,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,"Pull request #1571: Set ""junit"" as ""Automatic-Module-Name""",,Misc,"JUnit 4.13 explicitly sets the module name to ""junit"" so that it is independent from the jar's name",Change implementation,Code redesign
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1028: Trim stack trace,,Misc,JUnit's command-line runner (JUnitCore) prints smaller stack traces.,Change implementation,Code redesign
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1403: Restore CategoryFilter constructor,,Misc,,Revert old behaviour ,Code redesign
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1530: Add Result#getAssumptionFailureCount,,Misc,,Add method,Add support for a new feature
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1292: Fix ResultMatchers#hasFailureContaining,,Misc,,Fix returning wrong output,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1380: Fix Assume#assumeNotNull,,Misc,Throw exception when needed,Fix wrong implementation,Bug fix
++14 years,2020,01/01/2020,4.13.,4.13,MINOR,Pull request #1557: MaxCore always closes stream of history file,,Misc,close the output stream of the history file when write failed,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,,,,,,
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #611: Assert.assertNotEquals() for float parameters,,Assertions,Fix inconsistency,Add method,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #632: Assert.assertArrayEquals() for boolean[] parameters.,,Assertions,Fix inconsistency,Add method,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #918: Avoid potentially expensive reflection-based loop in Assert.assertArrayEquals(),,Assertions,Avoid potentially expensive reflection-based loop,Code refinement,Performance improvement
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #647: Support command-line --filter param.,,Command-line options,,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #763: Allow custom test runners to create their own TestClasses and customize the scanning of annotations.,,Test Runners,allow subclasses to control creation of the TestClass instance and to scan for annotations.,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #817: Support for context hierarchies,,Test Runners,Support for context hierarchies,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #716: Fix annotation collection from superclasses of JUnit3 tests.,,Test Runners,Fix annotation collection from superclasses of JUnit3 tests.,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #625 (commit 72af03c49f): Make RunNotifier code concurrent.,,Test Runners,,Fix concurrency,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #684: Adding AnnotationValidator framework and validation checks for @Category.,,Test Runners,,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #583: Pull request #720: Fix handling of AssertionError and AssumptionViolatedException in ExpectedException rule.,,Exception Testing,AssertionError,Handle exception,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,-,,Exception Testing,AssumptionViolatedException,Handle exception,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #818: Pull request #993: External version of AssumptionViolatedException,,Exception Testing,Add external version of AssumptionViolatedException,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,-,,Exception Testing,Remove unused constructors,Code simplification,Maintainability improvement
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #985: Change AssumptionViolatedException to not set the cause to null; fixes issue #494,,Exception Testing,,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #542: Customized failure message for ExpectedException,,Exception Testing,Customized failure message for ExpectedException,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #1013: Make ErrorCollector#checkSucceeds generic,,Exception Testing,Make method generic,Change implementation,Code redesign
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #823: Throw TestFailedOnTimeoutException instead of plain Exception on timeout,,Timeout for Tests,,Fix throwing wrong exception,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #742: Pull request #986: Timeout exceptions now include stack trace from stuck thread (experimental),,Timeout for Tests,Timeout exceptions now include stack trace from stuck thread (experimental),Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #544: New constructor and factories in Timeout,,Timeout for Tests,,Add method,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,-,,Timeout for Tests,,Add constructor,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,-,,Timeout for Tests,,Deprecate constructor,Deprecate functionality
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #549: fixes for #544 and #545,,Timeout for Tests,StatementThread catching two more exceptions when a thread is interrupted: InterruptedIOException and ClosedByInterruptException.,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,-,,Timeout for Tests,,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #876: The timeout rule never times out if you pass in a timeout of zero.,,Timeout for Tests,Change the Timeout rule to never timeout the test if zero is passed in,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #702: Support more return types for the @Parameters method of the Parameterized runner,,Parameterized Tests,Support more return types for the @Parameters method of the Parameterized runner,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #773: Allow configurable creation of child runners of parameterized suites,,Parameterized Tests,Allow configurable creation of child runners of parameterized suites,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #552: Pull request #937: Stopwatch rule,,Rules,,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #932: Allow static @Rules also annotated with @ClassRule,,Rules,Allow members annotated with both @ClassRule and @Rule to be static,Change implementation,Code redesign
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #956: DisableOnDebug rule,,Rules,,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #974: Updated TemporaryFolder.newFolder() to give an error message if a path contains a slash.,,Rules,,Fix exception message,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #1015: Methods annotated with Rule can return a MethodRule.,,Rules,,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #1020: Added validation that @ClassRule should only be implementation of TestRule.,,Rules,Fix test outcome,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #1021: JavaDoc of TemporaryFolder: folder not guaranteed to be deleted.,,Rules,,Update documentation,Documentation
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #529: @DataPoints-annotated methods can now yield null values,,Theories,,Fix inconsistency,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #572: Ensuring no-generic-type-parms validator called/tested for theories,,Theories,,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #607: Improving theory failure messages,,Theories,Improve exception message ,Code refactoring,Maintainability improvement
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #601: Allow use of Assume in tests run by Theories runner,,Theories,Fix test outcome,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #623: Ensure data points array fields and methods are public and static in Theory classes.,,Theories,Fix test outcome,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,"Pull request #621: Added mechanism for matching specific data points in theories to specific parameters, by naming data points.",,Theories,"Added mechanism for matching specific data points in theories to specific parameters, by naming data points.",Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #654: Auto-generation of enum and boolean data points,,Theories,Auto-generation of enum and boolean data points,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #651: Improvements to Theory parameter and DataPoint type matching,,Theories,,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,-,,Theories,correctly handles boxing and unboxing for primitive and wrapper types,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #639: Failing theory datapoint methods now cause theory test failures,,Theories,This is a non-backward-compatible change,Fix wrong implementation,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #658: Iterables can now be used as data points,,Theories,Iterables can now be used as data points,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #566: Enables inheritance on Category by adding @Inherited,,Categories,Enables inheritance on Category by adding @Inherited,Change implementation,Code redesign
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #503: Configurable Categories,,Categories,Configurable Categories,Add functionality,Add support for a new feature
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,[Pull request #879:] (#879) Add the default 'Implementation-*' headers to the manifest,,Use with Maven,Add the default 'Implementation-*' headers to the manifest,Code refactoring,Maintainability improvement
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #511: Maven project junit:junit:jar,,Use with Maven,Maven project junit:junit:jar,Maven ,Support for external development tool
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #776: Add support for Travis CI,,Miscellaneous,,Travis CI,Support for external development tool
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #921: Apply Google Code Style,,Miscellaneous,Apply Google Code Style,Stylistic improvement,Maintainability improvement
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #939 Renamed license file,,Miscellaneous,Renamed license file,Fix integration with external development tool,Bug fix
++8 years,2014,04/12/2014,4.12.,4.12,MINOR,Pull request #962: Do not include thread start time in test timeout measurements.,,Miscellaneous,Do not include thread start time in test timeout measurements.,Code refinement,Performance improvement
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,,,,,,
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,Matchers: Upgrade to Hamcrest 1.3,,,Upgrade to Hamcrest 1.3,Add functionality,Add support for a new feature
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,Parameterized Tests,,,,Add functionality,Add support for a new feature
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,Test execution order,,,"From now on, JUnit will by default use a deterministic, but not predictable, order (MethodSorters.DEFAULT).",Change implementation,Code redesign
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,Maven artifacts,,,use junit:junit which will be what junit:junit-dep used to,Change implementation,Code redesign
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,MethodRule is no longer deprecated.,,Rules,Remove deprecation,Change implementation,Code redesign
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,Both @Rule and @ClassRule can now be used on methods that return a TestRule.,,Rules,,Change implementation,Code redesign
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,ExpectedException now always prints the stacktrace of the actual exception in case of failure.,,Rules,Improve exception message ,Code refactoring,Maintainability improvement
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,"A parent folder can be specified for TemporaryFolder. In addition, the newFile/newFolder methods will now fail when the file or folder could not be created.",,Rules,,Add functionality,Add support for a new feature
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,TestWatcher has a new template method called skipped that is invoked when a test is skipped due to a failed assumption.,,Rules,,Add method,Add support for a new feature
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,assertNotEquals has been added to Assert.,,Improvements to Assert and Assume,,Add method,Add support for a new feature
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,assertEquals has been overloaded in order to check whether two floats are equal given a certain float delta.,,Improvements to Assert and Assume,assertEquals has been overloaded in order to check whether two floats are equal given a certain float delta.,Add method,Add support for a new feature
++6 years,2012,14/11/2012,4.11.,4.11,MINOR,Most methods in Assume now allow to pass a custom message.,,Improvements to Assert and Assume,Most methods in Assume now allow to pass a custom message.,Add functionality,Add support for a new feature
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,,,,,,
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,junit-dep has correct contents,,,,Fix integration with external development tool,Bug fix
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,RuleChain,,,,Add functionality,Add support for a new feature
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"TemporaryFolder#newFolder(String... folderNames) creates recursively deep temporary folders [@rodolfoliviero, closing gh-283]",,,creates recursively deep temporary folders,Change implementation,Code redesign
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"TemporaryFolder#newFile() creates a randomly named new file, and #newFolder() creates a randomly named new folder [@Daniel Rothmaler, closing gh-299]",,,"creates a randomly named new file, and #newFolder() creates a randomly named new folder",Change implementation,Code redesign
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"The Theories runner does not anticipate theory parameters that have generic types, as reported by github#64.",,,,Fix wrong implementation,Bug fix
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"TemporaryFolder should not create files in the current working directory if applying the rule fails [@orfjackal, fixing gh-278]",,Built-in Rules implementations,,Fix wrong implementation,Bug fix
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"TestWatcher and TestWatchman should not call failed for AssumptionViolatedExceptions [@stefanbirkner, fixing gh-296]",,Built-in Rules implementations,,Fix wrong implementation,Bug fix
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"Assert documentation [@stefanbirkner, fixing gh-134]",,Javadoc bugs,,Fix documentation,Documentation
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"ClassRule [@stefanbirkner, fixing gh-254]",,Javadoc bugs,,Fix documentation,Documentation
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"Parameterized [@stefanbirkner, fixing gh-89]",,Javadoc bugs,,Fix documentation,Documentation
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"Parameterized, again [@orfjackal, fixing gh-285]",,Javadoc bugs,,Fix documentation,Documentation
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"Useless code in RunAfters [@stefanbirkner, fixing gh-289]",,Miscellaneous,Remove redundant method call,Code refinement,Performance improvement
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"Parameterized test classes should be able to have @Category annotations [@dsaff, fixing gh-291]",,Miscellaneous,,Fix wrong implementation,Bug fix
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"Error count should be initialized in junit.tests.framework.TestListenerTest [@stefanbirkner, fixing gh-225]",,Miscellaneous,,Fix wrong implementation,Bug fix
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"AssertionFailedError constructor shouldn't call super with null message [@stefanbirkner, fixing gh-318]",,Miscellaneous,,Fix wrong implementation,Bug fix
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"Clearer error message for non-static inner test classes [@stefanbirkner, fixing gh-42]",,Miscellaneous,,Fix exception message,Bug fix
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"Description, Result and Failure are Serializable [@ephox-rob, closing gh-101]",,Minor changes,Make classes implement Serializable,Change implementation,Code redesign
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"FailOnTimeout is reusable, allowing for retrying Rules [@stefanbirkner, closing gh-265]",,Minor changes,Fix test outcome,Fix wrong implementation,Bug fix
++5 years,2011,29/09/2011,4.10.,4.10,MINOR,"New ErrorCollector.checkThat overload, that allows you to specify a reason [@drothmaler, closing gh-300]",,Minor changes,,Add method,Add support for a new feature
++5 years,2011,22/08/2011,4.9,4.9,MINOR,,,,,,
++5 years,2011,22/08/2011,4.9,4.9,MINOR,ClassRule,,,,Add functionality,Add support for a new feature
++5 years,2011,22/08/2011,4.9,4.9,MINOR,"In JUnit 4.9, fields that can be annotated with either @Rule or @ClassRule should be of type TestRule.",,TestRule,,Change implementation,Code redesign
++5 years,2011,22/08/2011,4.9,4.9,MINOR,-,,,,Deprecate method,Deprecate functionality
++5 years,2011,22/08/2011,4.9,4.9,MINOR,"Maven bundles have, in the past, been uploaded by kind volunteers. Starting with this release, the JUnit team is attempting to perform this task ourselves.",,Maven support,"Maven bundles have, in the past, been uploaded by kind volunteers. Starting with this release, the JUnit team is attempting to perform this task ourselves.",Change implementation,Code redesign
++5 years,2011,22/08/2011,4.9,4.9,MINOR,The Common Public License that JUnit is released under is now included in the source repository.,,LICENSE checked in,The Common Public License that JUnit is released under is now included in the source repository.,Change implementation,Code redesign
++5 years,2011,22/08/2011,4.9,4.9,MINOR,github#98: assumeTrue() does not work with expected exceptions,,Bug fixes,,Fix wrong implementation,Bug fix
++5 years,2011,22/08/2011,4.9,4.9,MINOR,github#74: Categories + Parameterized,,Bug fixes,,Fix wrong implementation,Bug fix
++5 years,2011,22/08/2011,4.9,4.9,MINOR,github#38: ParentRunner filters more than once,,Bug fixes,,Fix wrong implementation,Bug fix
++5 years,2011,22/08/2011,4.9,4.9,MINOR,github#248: protected BlockJUnit4ClassRunner#rules method removed from 4.8.2,,Bug fixes,,Fix wrong implementation,Bug fix
++5 years,2011,22/08/2011,4.9,4.9,MINOR,github#187: Accidental dependency on Java 6,,Bug fixes,Adapt to newer Java version,Fix regression,Bug fix
++5 years,2011,22/08/2011,4.9,4.9,MINOR,"github#163: Bad comparison failure message when using assertEquals(String, String)",,Bug fixes,,Fix exception message,Bug fix
++5 years,2011,22/08/2011,4.9,4.9,MINOR,github#227: ParentRunner now assumes that getChildren() returns a modifiable list,,Bug fixes,,Fix wrong type assumption,Bug fix
++5 years,2011,22/08/2011,4.9,4.9,MINOR,"Backed out unused folder ""experimental-use-of-antunit"", replaced by bash-based script at build_tests.sh",,Minor changes,Remove unused folder,Code simplification,Maintainability improvement
++5 years,2011,22/08/2011,4.9,4.9,MINOR,Various Javadoc fixes,,Minor changes,,Fix documentation,Documentation
++5 years,2011,22/08/2011,4.9,4.9,MINOR,"Made MultipleFailureException public, to assist extension writers.",,Minor changes,Make class public,Change access modifier,Code redesign
++5 years,2011,22/08/2011,4.9,4.9,MINOR,"github#240: Add ""test"" target to build.xml, for faster ant-driven testing.",,Minor changes,Improve integration with external tool,Code refactoring,Maintainability improvement
++5 years,2011,22/08/2011,4.9,4.9,MINOR,github#247: Give InitializationError a useful message,,Minor changes,,Fix exception message,Bug fix
++4 years,2010,05/10/2010,4.8,4.8.2,PATCH,,,,,,
++4 years,2010,05/10/2010,4.8,4.8.2,PATCH,github#96: TestSuite(MyTestCase.class) should dynamically detect if MyTestCase is a TestCase,,Bug fixes,,Fix wrong implementation,Bug fix
++4 years,2010,25/02/2010,4.8,4.8.1,PATCH,,,,,,
++4 years,2010,25/02/2010,4.8,4.8.1,PATCH,github#61: Category annotations on classes were not honored.,,Bug fixes,,Fix wrong implementation,Bug fix
++4 years,2010,05/10/2010,4.8,4.8,MINOR,,,,,,
++4 years,2010,05/10/2010,4.8,4.8,MINOR,"From a given set of test classes, the Categories runner runs only the classes and methods that are annotated with either the category given with the @IncludeCategory annotation, or a subtype of that category.",,,,Add functionality,Add support for a new feature
++4 years,2010,05/10/2010,4.8,4.8,MINOR,github#16: thread safety of Result counting,,Bug fixes,,Fix thread-safe issue,Bug fix
++3 years,2009,12/08/2009,4.7,4.7,MINOR,,,,,,
++3 years,2009,12/08/2009,4.7,4.7,MINOR,The TemporaryFolder Rule allows creation of files and folders that are guaranteed to be deleted when the test method finishes (whether it passes or fails):,,Rules,The TemporaryFolder Rule allows creation of files and folders that are guaranteed to be deleted when the test method finishes,Add class,Add support for a new feature
++3 years,2009,12/08/2009,4.7,4.7,MINOR,"ExternalResource is a base class for Rules (like TemporaryFolder) that set up an external resource before a test (a file, socket, server, database connection, etc.), and guarantee to tear it down afterward:",,Rules,"ExternalResource is a base class for Rules (like TemporaryFolder) that set up an external resource before a test (a file, socket, server, database connection, etc.), and guarantee to tear it down afterward:",Add class,Add support for a new feature
++3 years,2009,12/08/2009,4.7,4.7,MINOR,"The ErrorCollector Rule allows execution of a test to continue after the first problem is found (for example, to collect all the incorrect rows in a table, and report them all at once):",,Rules,The ErrorCollector Rule allows execution of a test to continue after the first problem is found,Add class,Add support for a new feature
++3 years,2009,12/08/2009,4.7,4.7,MINOR,"Verifier is a base class for Rules like ErrorCollector, which can turn otherwise passing test methods into failing tests if a verification check is failed",,Rules,"Verifier is a base class for Rules like ErrorCollector, which can turn otherwise passing test methods into failing tests if a verification check is failed",Add class,Add support for a new feature
++3 years,2009,12/08/2009,4.7,4.7,MINOR,"TestWatchman is a base class for Rules that take note of the testing action, without modifying it. For example, this class will keep a log of each passing and failing test:",,Rules,"TestWatchman is a base class for Rules that take note of the testing action, without modifying it. For example, this class will keep a log of each passing and failing test:",Add class,Add support for a new feature
++3 years,2009,12/08/2009,4.7,4.7,MINOR,The TestName Rule makes the current test name available inside test methods:,,Rules,The TestName Rule makes the current test name available inside test methods:,Add class,Add support for a new feature
++3 years,2009,12/08/2009,4.7,4.7,MINOR,The Timeout Rule applies the same timeout to all test methods in a class:,,Rules,The Timeout Rule applies the same timeout to all test methods in a class:,Add class,Add support for a new feature
++3 years,2009,12/08/2009,4.7,4.7,MINOR,The ExpectedException Rule allows in-test specification of expected exception types and messages:,,Rules,The ExpectedException Rule allows in-test specification of expected exception types and messages:,Add class,Add support for a new feature
++3 years,2009,12/08/2009,4.7,4.7,MINOR,Tests that time out now show the stack trace of the test thread.,,Timeouts,Tests that time out now show the stack trace of the test thread.,Change implementation,Code redesign
++3 years,2009,12/08/2009,4.7,4.7,MINOR,"Due to typing incompatibilities, JUnit is still including the 1.1 release of hamcrest. ",,Matchers,,Revert old behaviour ,Code redesign
++3 years,2009,12/08/2009,4.7,4.7,MINOR,Javadocs now link to online JDK javadocs (bug 2090230),,Docs,,Update documentation,Documentation
++3 years,2009,12/08/2009,4.7,4.7,MINOR,Parameterized runner javadocs improved (bug 2186792),,Docs,,Improve documentation,Documentation
++3 years,2009,12/08/2009,4.7,4.7,MINOR,Fixed Javadoc code sample for AfterClass (2126279),,Docs,,Fix documentation,Documentation
++3 years,2009,12/08/2009,4.7,4.7,MINOR,"Fixed Javadoc for assertArraysEqual(float[], float[])",,Docs,,Fix documentation,Documentation
++3 years,2009,12/08/2009,4.7,4.7,MINOR,Fixed: BaseTestRunner.getTest() requires class to extend TestCase (1812200),,Bug fixes,BaseTestRunner.getTest() requires class to extend TestCase,Fix wrong implementation,Bug fix
++3 years,2009,12/08/2009,4.7,4.7,MINOR,Fixed: Suite does not allow for inheritance in annotations (2783118),,Bug fixes,Suite does not allow for inheritance in annotations,Fix wrong implementation,Bug fix
++3 years,2009,12/08/2009,4.7,4.7,MINOR,Fixed: ParallelComputer skipped tests that took longer than 2 seconds,,Bug fixes,ParallelComputer skipped tests that took longer than 2 seconds,Fix wrong implementation,Bug fix
++3 years,2009,09/05/2009,4.6,4.6,MINOR,,,,,,
++3 years,2009,09/05/2009,4.6,4.6,MINOR,"JUnit now includes a new experimental Core, MaxCore. MaxCore remembers the results of previous test runs in order to run new tests out of order.",,Max,,Add functionality,Add support for a new feature
++3 years,2009,09/05/2009,4.6,4.6,MINOR,JUnitCore now includes an experimental method that allows you to specify a model of the Computer that runs your tests.,,Test scheduling strategies,,Add method,Add support for a new feature
++3 years,2009,09/05/2009,4.6,4.6,MINOR,"Arrays of doubles can be compared, using a delta allowance for equality:",,Comparing double arrays,,Add functionality,Add support for a new feature
++3 years,2009,09/05/2009,4.6,4.6,MINOR,Filter.matchDescription API,,,,Add method,Add support for a new feature
++3 years,2009,09/05/2009,4.6,4.6,MINOR,A couple classes and packages that once had empty javadoc have been doc'ed.,,Documentation,,Add documentation,Documentation
++3 years,2009,09/05/2009,4.6,4.6,MINOR,Added how to run JUnit from the command line to the cookbook.,,Documentation,,Add documentation,Documentation
++3 years,2009,09/05/2009,4.6,4.6,MINOR,junit-4.x.zip now contains build.xml,,Documentation,junit-4.x.zip now contains build.xml,Change implementation,Code redesign
++3 years,2009,09/05/2009,4.6,4.6,MINOR,Fixed overly permissive @DataPoint processing (2191102),,Bug fixes,,Fix wrong implementation,Bug fix
++3 years,2009,09/05/2009,4.6,4.6,MINOR,Fixed bug in test counting after an ignored method (2106324),,Bug fixes,,Fix wrong implementation,Bug fix
++2 years,2008,04/09/2008,4.5,4.5,MINOR,,,,,,
++2 years,2008,04/09/2008,4.5,4.5,MINOR,"We are releasing junit-4.5.jar, which contains all the classes necessary to run JUnit, and junit-dep-4.5.jar, which leaves out hamcrest classes, for developers who already use hamcrest outside of JUnit.",,Installation,,Change installation setting,Code redesign
++2 years,2008,04/09/2008,4.5,4.5,MINOR,Test classes whose only test methods are inherited from superclasses now run.,,Basic JUnit operation,,Fix wrong implementation,Bug fix
++2 years,2008,04/09/2008,4.5,4.5,MINOR,"Optimization to annotation processing can cut JUnit overhead by more than half on large test classes, especially when using Theories. [Bug 1796847]",,Basic JUnit operation,,Fix wrong implementation,Bug fix
++2 years,2008,04/09/2008,4.5,4.5,MINOR,"Correct results when comparing the string ""null"" with potentially null values. [Bug 1857283]",,Basic JUnit operation,,Fix wrong implementation,Bug fix
++2 years,2008,04/09/2008,4.5,4.5,MINOR,"Annotating a class with @RunWith(JUnit4.class) will always invoke the default JUnit 4 runner in the current version of JUnit. This default changed from JUnit4ClassRunner in 4.4 to BlockJUnit4ClassRunner in 4.5 (see below), and may change again.",,Basic JUnit operation,,Change implementation,Code redesign
++2 years,2008,04/09/2008,4.5,4.5,MINOR,BlockJUnit4Runner is a new implementation of the standard JUnit 4 test class functionality. In contrast to JUnit4ClassRunner (the old implementation):,,Extension,,Add functionality,Add support for a new feature
++2 years,2008,04/09/2008,4.5,4.5,MINOR,"ParentRunner is a base class for runners that iterate over a list of ""children"", each an object representing a test or suite to run. ParentRunner provides filtering, sorting, @BeforeClass, @AfterClass, and method validation to subclasses.",,Extension,,Add functionality,Add support for a new feature
++2 years,2008,04/09/2008,4.5,4.5,MINOR,"TestClass wraps a class to be run, providing efficient, repeated access to all methods with a given annotation.",,Extension,,Add functionality,Add support for a new feature
++2 years,2008,04/09/2008,4.5,4.5,MINOR,The new RunnerBuilder API allows extending the behavior of Suite-like custom runners.,,Extension,,Add functionality,Add support for a new feature
++2 years,2008,04/09/2008,4.5,4.5,MINOR,AssumptionViolatedException.toString() is more informative,,Extension,Improve exception message ,Code refactoring,Maintainability improvement
++2 years,2008,04/09/2008,4.5,4.5,MINOR,Parameterized.eachOne() has been removed,,Extra Runners,Remove method,Change implementation,Code redesign
++2 years,2008,04/09/2008,4.5,4.5,MINOR,New runner Enclosed runs all static inner classes of an outer class.,,Extra Runners,,Add functionality,Add support for a new feature
++2 years,2008,04/09/2008,4.5,4.5,MINOR,"@Before and @After methods are run before and after each set of attempted parameters on a Theory, and each set of parameters is run on a new instance of the test class.",,Theories,,Add functionality,Add support for a new feature
++2 years,2008,04/09/2008,4.5,4.5,MINOR,Exposed API's ParameterSignature.getType() and ParameterSignature.getAnnotations(),,Theories,,Add functionality,Add support for a new feature
++2 years,2008,04/09/2008,4.5,4.5,MINOR,An array of data points can be introduced by a field or method marked with the new annotation @DataPoints,,Theories,,Add functionality,Add support for a new feature
++2 years,2008,04/09/2008,4.5,4.5,MINOR,The Theories custom runner has been refactored to make it faster and easier to extend,,Theories,,Code refactoring,Maintainability improvement
++2 years,2008,04/09/2008,4.5,4.5,MINOR,-,,,,Code refinement,Performance improvement
++2 years,2008,04/09/2008,4.5,4.5,MINOR,"Source has been split into directories src/main/java and src/test/java, making it easier to exclude tests from builds, and making JUnit more maven-friendly",,Development,Source has been split into directories src/main/java and src/test/java,Change implementation,Code redesign
++2 years,2008,04/09/2008,4.5,4.5,MINOR,"Test classes in org.junit.tests have been organized into subpackages, hopefully making finding tests easier.",,Development,"Test classes in org.junit.tests have been organized into subpackages, hopefully making finding tests easier.",Change implementation,Code redesign
++2 years,2008,04/09/2008,4.5,4.5,MINOR,ResultMatchers has more informative descriptions.,,Development,,Improve documentation,Documentation
++2 years,2008,04/09/2008,4.5,4.5,MINOR,TestSystem allows testing return codes and other system-level interactions.,,Development,,Add functionality,Add support for a new feature
++2 years,2008,04/09/2008,4.5,4.5,MINOR,"Removed Request.classes(String, Class<?>...) factory method",,Incompatible changes,Remove method,Change implementation,Code redesign
++2 years,2008,04/09/2008,4.5,4.5,MINOR,Each test method and test class can be annotated as belonging to a category:,,Categories,,Add functionality,Add support for a new feature
++2 years,2008,04/09/2008,4.5,4.5,MINOR,"Tests with failed assumptions are now marked as Ignored, rather than silently passing. This may change behavior in some client tests, and also will require some new support on the part of IDE's.",,JUnit 4 Runner API,,Change implementation,Code redesign
++1 year,2007,21/08/2007,4.4,4.4,MINOR,,,,,,
++1 year,2007,21/08/2007,4.4,4.4,MINOR,assertThat,,,,Add functionality,Add support for a new feature
++1 year,2007,21/08/2007,4.4,4.4,MINOR,"To allow compatibility with a wide variety of possible matchers, we have decided to include the classes from hamcrest-core, from the Hamcrest project. This is the first time that third-party classes have been included in JUnit.",,Needed for assertThat,Hamcrest,Add functionality,Add support for a new feature
++1 year,2007,21/08/2007,4.4,4.4,MINOR,The support for Theories,,,,Add functionality,Add support for a new feature
++1 year,2007,21/08/2007,4.4,4.4,MINOR,Annotated descriptions,,,,Add functionality,Add support for a new feature
++1 year,2007,21/08/2007,4.4,4.4,MINOR,"Bug fix (1715326): assertEquals now compares all Numbers using their native implementation of equals. This assertion, which passed in 4.3, will now fail:",,,assertEquals now compares all Numbers using their native implementation of equals,Fix wrong implementation,Bug fix
++1 year,2007,21/08/2007,4.4,4.4,MINOR,"Non-integer Numbers (Floats, Doubles, BigDecimals, etc), which were compared incorrectly in 4.3, are now fixed",,,,Fix wrong implementation,Bug fix
++1 year,2007,21/08/2007,4.4,4.4,MINOR,"assertEquals(long, long) and assertEquals(double, double) have been re-introduced to the Assert class, to take advantage of Java's native widening conversions. Therefore, this still passes:",,,,Revert old behaviour ,Code redesign
++1 year,2007,21/08/2007,4.4,4.4,MINOR,"The default runner for JUnit 4 test classes has been refactored. The old version was named TestClassRunner, and the new is named JUnit4ClassRunner",,,Rename classes,Code refactoring,Maintainability improvement
++1 year,2007,21/08/2007,4.4,4.4,MINOR,The rules for determining which runner is applied by default to a test class have been simplified:,,,,Code simplification,Maintainability improvement
++1 year,2007,21/08/2007,4.4,4.4,MINOR,Bug fix (1739095): Filters and Sorters work correctly on test classes that contain a suite method like:,,,,Fix wrong implementation,Bug fix
++1 year,2007,21/08/2007,4.4,4.4,MINOR,Bug fix (1745048): @After methods are now correctly called after a test method times out.,,,,Fix wrong implementation,Bug fix
++1 year,2007,14/05/2007,4.3,4.3.1,PATCH,,,,,,
++1 year,2007,14/05/2007,4.3,4.3.1,PATCH,Regression,,,,Fix regression,Bug fix
++1 year,2007,14/05/2007,4.3,4.3.1,PATCH,Regression,,,,Fix regression,Bug fix
++1 year,2007,14/05/2007,4.3,4.3,MINOR,,,,,,
++1 year,2007,14/05/2007,4.3,4.3,MINOR,"Changes in array equality. Using assertEquals to compare array contents is now deprecated. In the future, assertEquals will revert to its pre-4.0 meaning of comparing objects based on Java's Object.equals semantics. To compare array contents, use the new, more reliable Assert.assertArrayEquals methods.",,,,Change implementation,Code redesign
++1 year,2007,14/05/2007,4.3,4.3,MINOR,-,,,,Deprecate method,Deprecate functionality
++1 year,2007,14/05/2007,4.3,4.3,MINOR,"The @Ignore annotation can now be applied to classes, to ignore the entire class, instead of individual methods.",,,,Add functionality,Add support for a new feature
++1 year,2007,14/05/2007,4.3,4.3,MINOR,"Originally, developers who wanted to use a static suite() method from JUnit 3.x with a JUnit 4.x runner had to annotate the class with @RunWith(AllTests.class). In the common case, this requirement has been removed. However, when such a class is wrapped with a JUnit4TestAdapter (which we believe is rare), the results may not be as expected.",,,,Change implementation,Code redesign
++1 year,2007,14/05/2007,4.3,4.3,MINOR,"Improved error messages for array comparison(""arrays first differed at element [1][0]"")",,,Improve exception message ,Code refactoring,Maintainability improvement
++1 year,2007,14/05/2007,4.3,4.3,MINOR,Bug fix: Inaccessible base class is caught at test construction time.,,,,Fix wrong implementation,Bug fix
++1 year,2007,14/05/2007,4.3,4.3,MINOR,Bug fix: Circular suites are caught at test construction time.,,,,Fix wrong implementation,Bug fix
++1 year,2007,14/05/2007,4.3,4.3,MINOR,Bug fix: Test constructors that throw exceptions are reported correctly.,,,,Fix wrong implementation,Bug fix
++1 year,2007,14/05/2007,4.3,4.3,MINOR,"Sources now are in a separate ""src"" directory (this means a big break in the CVS history)",,,,Change implementation,Code redesign
++1 year,2007,14/05/2007,4.3,4.3,MINOR,"Improved documentation in Request, RunWith",,,,Improve documentation,Documentation
++1 year,2007,01/02/2007,4.2,4.2,MINOR,,,,,,
++1 year,2007,01/02/2007,4.2,4.2,MINOR,Bug fix: Inaccessible base class is caught at test construction time.,,,,Fix wrong implementation,Bug fix
++1 year,2007,01/02/2007,4.2,4.2,MINOR,Bug fix: Circular suites are caught at test construction time.,,,,Fix wrong implementation,Bug fix
++1 year,2007,01/02/2007,4.2,4.2,MINOR,"Improved error messages for array comparison(""arrays first differed at element [1][0]"")",,,Improve exception message ,Code refactoring,Maintainability improvement
++1 year,2007,01/02/2007,4.2,4.2,MINOR,Test constructors that throw exceptions are reported correctly.,,,,Fix wrong implementation,Bug fix
+API start,2006,06/10/2006,4.1,4.1,MINOR,,,,,,
+API start,2006,06/10/2006,4.1,4.1,MINOR,"Bug fix: listeners now get a correct test running time, rather than always being told 0 secs.",,,,Fix wrong implementation,Bug fix
+API start,2006,06/10/2006,4.1,4.1,MINOR,The @RunWith annotation is now inherited by subclasses: all subclasses of an abstract test class will be run by the same runner.,,,,Change implementation,Code redesign
+API start,2006,06/10/2006,4.1,4.1,MINOR,The build script fails if the JUnit unit tests fail,,,The build script fails if the JUnit unit tests fail,Fix failing build,Bug fix
+API start,2006,06/10/2006,4.1,4.1,MINOR,The faq has been updated,,,,Update documentation,Documentation
+API start,2006,06/10/2006,4.1,4.1,MINOR,"Javadoc has been improved, with more internal links, and package descriptions added (Thanks, Matthias Schmidt!)",,,,Improve documentation,Documentation
+API start,2006,06/10/2006,4.1,4.1,MINOR,An acknowledgements.txt file has been created to credit outside contributions,,,An acknowledgements.txt file has been created to credit outside contributions,Add documentation,Documentation
+API start,2006,06/10/2006,4.1,4.1,MINOR,"The Enclosed runner, which runs all of the static inner classes of a given class, has been added to org.junit.runners.",,,,Change implementation,Code redesign
+API start,2006,18/02/2006,4,4.0,MAJOR,,,,,,
+API start,2006,18/02/2006,4,4.0,MAJOR,"The architecture of JUnit 4.0 is a substantial departure from that of earlier releases. Instead of tagging test classes by subclassing junit.framework.TestCase and tagging test methods by starting their name with ""test"", you now tag test methods with the @Test annotation.",,,,Change implementation,Code redesign
