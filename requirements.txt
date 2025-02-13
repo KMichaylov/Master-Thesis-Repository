@@ -7,3 +7,4 @@ openpyxl
 networkx
 spacy
 xgboost
+wordcloud
