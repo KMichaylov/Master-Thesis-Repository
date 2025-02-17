@@ -1,0 +1,365 @@
+﻿Date;Aggregated Version;Version;RELEASE;Changes;Type;General;General Category
+29.05.2024;1.7;1.7.0;MINOR;;;;
+29.05.2024;1.7;1.7.0;MINOR;AppCompatDialog now correctly sets the LifecycleOwner, SavedStateRegistryOwner, and OnBackPressedDispatcherOwner on the dialog's decor view via the ViewTree APIs, fixing issues when hosting a ComposeView within an AppCompatDialog.;Important changes since 1.6.0;Fix wrong implementation;Bug fix
+29.05.2024;1.7;1.7.0;MINOR;AppCompatActivity now sets the ViewTreeOnBackPressedDispatcherOwner so that it is possible to retrieve the dispatcher from the view.;Important changes since 1.6.1;Change Implementation;Code redesign
+29.05.2024;1.7;1.7.0;MINOR;Significantly improved the performance of SupportMenuInflater.;Important changes since 1.6.2;Improve performance;Performance improvement
+29.05.2024;1.7;1.7.0;MINOR;Locale.getDefault() now returns the system locale after a cold start.;Important changes since 1.6.3;Change Implementation;Code redesign
+29.05.2024;1.7;1.7.0;MINOR;LinearLayoutCompat now preserves margin layout params.;Important changes since 1.6.4;Change Implementation;Code redesign
+29.05.2024;1.7;1.7.0;MINOR;AppCompat now depends on Activity 1.7.0.;"Dependency Updates
+";Update version numbers;Update dependency
+29.05.2024;1.7;1.7.0;MINOR;AppCompat now depends on Fragment version 1.5.4.;"Dependency Updates
+";Update version numbers;Update dependency
+26.06.2023;1.7;1.7.0-alpha03;PRE-RELEASE;;;;
+;;;;"Support for getting per-app locales in non-Activity contexts (I58e753). Four new APIs have been added for this feature:
+";New Features;Add functionality;Add support for a new feature
+26.06.2023;1.7;1.7.0-alpha03;PRE-RELEASE;LocaleManagerCompat.getApplicationLocales(): for developers to get per-app locales out of activity scope.;New Features;Add method;Add support for a new feature
+;;;;ContextCompat.getString(): return localized strings based on per-app locales.;New Features;Add method;Add support for a new feature
+26.06.2023;1.7;1.7.0-alpha03;PRE-RELEASE;ContextCompat.getContextForLanguage(): the context returned by this method will respect the per-app locales.;New Features;Add method;Add support for a new feature
+;;;;ConfigurationCompat.setLocales(): for above APIs, to set the configuration's locale.;New Features;Add method;Add support for a new feature
+26.06.2023;1.7;1.7.0-alpha03;PRE-RELEASE;Added setLineHeight(unit, lineHeight) to TextView compat classes (Ia9fa9);Other API Changes;Add method;Add support for a new feature
+;;;;Added setLineHeight(unit, lineHeight) to TextView compat classes (Ib2ee1);Other API Changes;Add method;Add support for a new feature
+26.06.2023;1.7;1.7.0-alpha03;PRE-RELEASE;Added setLineHeight(unit, lineHeight) to TextView compat classes (I15716);Other API Changes;Add method;Add support for a new feature
+;;;;AppCompatDialog now correctly sets the LifecycleOwner, SavedStateRegistryOwner, and OnBackPressedDispatcherOwner on the dialog's decor view via the ViewTree APIs, fixing issues when hosting a ComposeView within an AppCompatDialog. AppCompat now depends on Activity 1.7.0. (Ib28ab, b/261314581);Bug Fixes;Fix wrong implementation;Bug fix
+26.06.2023;1.7;1.7.0-alpha03;PRE-RELEASE;Significantly improve the performance of SupportMenuInflater (I0b087);Bug Fixes;Improve performance;Performance improvement
+08.02.2023; 1.7.0;1.7.0-alpha02;PRE-RELEASE;;;;
+08.02.2023; 1.7.0;1.7.0-alpha02;PRE-RELEASE;Fixed a memory leak in AppCompatDelegate.getLocaleManagerForApplication() (44b57fd);Bug Fixes;Fix leak of memory;Memory improvement
+08.02.2023; 1.7.0;1.7.0-alpha02;PRE-RELEASE;AppCompat now depends on Fragment version 1.5.4 (I54dcd);Bug Fixes;Update version numbers;Update dependency
+05.10.2022;1.7.0;1.7.0-alpha01;PRE-RELEASE;;;;
+05.10.2022;1.7.0;1.7.0-alpha01;PRE-RELEASE;AppCompatActivity now sets the ViewTreeOnBackPressedDispatcherOwner so that it is possible to retrieve the dispatcher from the view. (I1a115, b/235416503);Bug Fixes;Add additional behaviour;Bug fix
+05.10.2022;1.7.0;1.7.0-alpha01;PRE-RELEASE;Locale.getDefault() now returns the system locale after a cold start (I6a94b);Bug Fixes;Change Implementation;Code redesign
+05.10.2022;1.7.0;1.7.0-alpha01;PRE-RELEASE;LinearLayoutCompat now preserves margin layout params (Id2af4);Bug Fixes;Fix wrong implementation;Bug fix
+08.02.2023;1.6;1.6.1;PATCH;;;;
+08.02.2023;1.6;1.6.1;PATCH;Fixed a memory leak in AppCompatDelegate.getLocaleManagerForApplication() (44b57fd);Bug Fixes;Fix leak of memory;Memory improvement
+11.01.2023;1.6;1.6.0;MINOR;;;;
+11.01.2023;1.6;1.6.0;MINOR;Added support for customizing application locales. See AppCompatDelegate.setApplicationLocales(LocaleListCompat) for more information. Provides backward compatibility for the new per-language preferences API available in Android 13.;Important changes since 1.5.0;Add functionality;Add support for a new feature
+11.01.2023;1.6;1.6.0;MINOR;Nullability updates to align with Android 13 (Tiramisu, API level 33) SDK.;Important changes since 1.5.1;Adhere to guidelines;Support for external development tool
+11.01.2023;1.6;1.6.0;MINOR;Added DrawableWrapper, DrawableContainer, and StateListDrawable compat classes to public API surface;Important changes since 1.5.2;Add classes;Add support for a new feature
+07.09.2022;1.6;1.6.0-rc01;PRE-RELEASE;;;;
+07.09.2022;1.6;1.6.0-rc01;PRE-RELEASE;AppCompatActivity now sets the ViewTreeOnBackPressedDispatcherOwner so that it is possible to retrieve the dispatcher from the view. (I1a115, b/235416503);Bug Fixes;Add functionality;Add support for a new feature
+07.09.2022;1.6;1.6.0-rc01;PRE-RELEASE;Reverted a bug fix that overwrote the configuration passed to onConfigurationChanged, which had caused issues for tests that injected their own custom configurations through onConfigurationChanged.;Bug Fixes;Fix wrong implementation;Bug fix
+10.08.2022;1.6;1.6.0-beta01;PRE-RELEASE;;;;
+10.08.2022;1.6;1.6.0-beta01;PRE-RELEASE;Move DrawableWrapper, DrawableContainer, and StateListDrawable compat classes to public API. (I37f3e, b/227789566);API Changes;Code reorganization;Code redesign
+10.08.2022;1.6;1.6.0-beta01;PRE-RELEASE;Introduces a new factory for async layout inflater. (Ia657b);API Changes;Add class;Add support for a new feature
+10.08.2022;1.6;1.6.0-beta01;PRE-RELEASE;Toolbar will now call onPrepareMenu() before the menu is shown instead of unconditionally when the menu is created. (I2a58d, b/232206677);Bug Fixes;Fix wrong implementation;Bug fix
+10.08.2022;1.6;1.6.0-beta01;PRE-RELEASE;AppCompat now explicitly depends on Lifecycle 2.5.1 and SavedState 1.2.0. (I7e3e2);Bug Fixes;Update version numbers;Update dependency
+10.08.2022;1.6;1.6.0-beta01;PRE-RELEASE;Added support for back invoked callback to AppCompatDelegate and the AppCompat-provided Toolbar implementation. (I24062);Bug Fixes;Add functionality;Add support for a new feature
+10.08.2022;1.6;1.6.0-beta01;PRE-RELEASE;Finalize AppCompat APIs for 1.5.0-beta01 (I2a43d, b/236866227);Bug Fixes;Update version numbers;Update dependency
+10.08.2022;1.6;1.6.0-beta01;PRE-RELEASE;Finalize AppCompat APIs for 1.5.0-beta01 (I2a43d, b/236866227);Bug Fixes;Update version numbers;Update dependency
+15.06.2022;1.6; 1.6.0-alpha05;PRE-RELEASE;;;;
+15.06.2022;1.6; 1.6.0-alpha05;PRE-RELEASE;Nullability updates to align with finalized API surface in Tiramisu Beta 3 SDK;API Changes;Adhere to guidelines;Support for external development tool
+15.06.2022;1.6; 1.6.0-alpha05;PRE-RELEASE;minCompileSdk is now 33 to align with Tiramisu Beta 3 SDK;API Changes;Adhere to guidelines;Support for external development tool
+18.05.2022;1.6;1.6.0-alpha04;PRE-RELEASE;;;;
+18.05.2022;1.6;1.6.0-alpha04;PRE-RELEASE;Add an API to override SwitchCompat width restriction for use by MDC-Android;API Changes;Add functionality;Add support for a new feature
+18.05.2022;1.6;1.6.0-alpha04;PRE-RELEASE;Avoid managed configuration when config changes outside of attachBaseConfig;Bug Fixes;Fix wrong implementation;Bug fix
+27.04.2022;1.6;1.6.0-alpha03;PRE-RELEASE;;;;
+27.04.2022;1.6;1.6.0-alpha03;PRE-RELEASE;Support for app-wide custom language selection via AppCompatDelegate.setApplicationLocales(). Delegates to platform implementation on API 33 and above.;New Features;Add functionality;Add support for a new feature
+23.02.2022;1.6;1.6.0-alpha01;PRE-RELEASE;;;;
+23.02.2022;1.6;1.6.0-alpha01;PRE-RELEASE;Added support for customizing application locales. See AppCompatDelegate.setApplicationLocales(LocaleListCompat) for more information. Provides backward compatibility for the new per-language preferences API available in Android 13.;New Features;Add functionality;Add support for a new feature
+07.09.2022;1.5;1.5.1;PATCH;;;;
+07.09.2022;1.5;1.5.1;PATCH;AppCompat now explicitly depends on Lifecycle 2.5.1 and SavedState 1.2.0. (I7e3e2);Dependency Updates;Update version numbers;Update dependency
+10.08.2022;1.5;1.5.0;MINOR;;;;
+10.08.2022;1.5;1.5.0;MINOR;This stable version includes improvements to night mode stability, bug fixes and compound drawable tinting support for AppCompat-backed text widgets, and improvements to API usability. See previous 1.5.0-series release notes for a detailed list of changes.;Important changes since 1.4.0;Add functionality;Add support for a new feature
+27.06.2022;1.5;1.5.0-rc01;PRE-RELEASE;;;;
+27.06.2022;1.5;1.5.0-rc01;PRE-RELEASE;Fixes an issue where AppCompat’s context wrapper reused the application context's backing resource implementation, resulting in uiMode being overwritten on the application context. (Idf9d5);Bug Fixes;Fix wrong implementation;Bug fix
+13.06.2022;1.5; 1.5.0-beta01;PRE-RELEASE;;;;
+13.06.2022;1.5; 1.5.0-beta01;PRE-RELEASE;Add an overridable flag to disable the default switch width adjustment. (I37cb7);API Changes;Add functionality;Add support for a new feature
+13.06.2022;1.5; 1.5.0-beta01;PRE-RELEASE;Add @FloatRange annotation to thumb position getter API (If524c);API Changes;Add annotation;Add support for a new feature
+13.06.2022;1.5; 1.5.0-beta01;PRE-RELEASE;Add missing nullability annotations to AnimatedStateListDrawableCompat (Ieb4ec);API Changes;Add functionality;Add support for a new feature
+13.06.2022;1.5; 1.5.0-beta01;PRE-RELEASE;Finalize AppCompat APIs for 1.5.0-beta01 (I2a43d, b/236866227);Bug Fixes;Update dependency;Update dependency
+13.06.2022;1.5; 1.5.0-beta01;PRE-RELEASE;Changing className value for ActionMenuItemView to treat it as a Button (I5ee1c);Bug Fixes;Change Implementation;Code redesign
+06.04.2022;1.5;1.5.0-alpha01;PRE-RELEASE;;;;
+06.04.2022;1.5;1.5.0-alpha01;PRE-RELEASE;Added a new API to expose switch thumb's position to subclasses (I9bfb4);API Changes;Add functionality;Add support for a new feature
+06.04.2022;1.5;1.5.0-alpha01;PRE-RELEASE;Updated nullability to match Tiramisu DP2 (I0cbb7);API Changes;Update version numbers;Update dependency
+06.04.2022;1.5;1.5.0-alpha01;PRE-RELEASE;Backported compound drawable tinting to TextView-derived widgets (Idf98c, b/165822337);API Changes;Change Implementation;Code redesign
+06.04.2022;1.5;1.5.0-alpha01;PRE-RELEASE;AppCompatDialog now extends ComponentDialog for compatibility with OnBackPressedDispatcher (Id9b91, b/217620781);API Changes;Code reorganization;Code redesign
+06.04.2022;1.5;1.5.0-alpha01;PRE-RELEASE;SearchView.onQueryRefine() is now protected visibility to allow overrides (I6cce0, b/212882845);API Changes;Change visibility;Code redesign
+06.04.2022;1.5;1.5.0-alpha01;PRE-RELEASE;AppCompat Toolbar now calls MenuHostHelper's onPrepareMenu() API. (I9b9b5, b/227376894);Bug Fixes;Change Implementation;Code redesign
+06.04.2022;1.5;1.5.0-alpha01;PRE-RELEASE;AppCompatEditText, AppCompatAutoCompleteEditText, AppCompatMultiAutoCompleteEditText will no longer reset clickable or longClickable in the constructor when set in XML (Ic5066, b/221094907);Bug Fixes;Change Implementation;Code redesign
+06.04.2022;1.5;1.5.0-alpha01;PRE-RELEASE;AppCompatEditText, AppCompatAutoCompleteTextView, and AppCompatMultiAutoCompleteTextView will not call overridden setKeyListener during the constructor (I5c13a, b/208480173);Bug Fixes;Change Implementation;Code redesign
+06.04.2022;1.5;1.5.0-alpha01;PRE-RELEASE;Appcompat will not wrap instances of NumberKeyListener passed to setKeyListener, allowing TextView to correctly configure the locale on NumberKeyListeners (Ibf113, b/207119921);Bug Fixes;Change Implementation;Code redesign
+06.04.2022;1.5;1.5.0-alpha01;PRE-RELEASE;Fixed issue with all NumberKeyListener subclasses introduced in AppCompat 1.4.0 that allowed unexpected characters such as punctuation to be input (Iede7a, b/207119921);Bug Fixes;Fix wrong implementation;Bug fix
+01.06.2022;1.4;1.4.2;PATCH;;;;
+01.06.2022;1.4;1.4.2;PATCH;Fix crash where AppCompatDelegateImpl made an internal call to ensureSubDecor before the action bar was created (aosp/2048349, b/226648941);Bug Fixes;Fix wrong implementation;Bug fix
+12.01.2022;1.4;1.4.1;PATCH;;;;
+12.01.2022;1.4;1.4.1;PATCH;AppCompatEditText, AppCompatAutoCompleteTextView, and AppCompatMultiAutoCompleteTextView will not call overriden setKeyListener during the constructor. (I5c13a, b/208480173);Bug Fixes;Change Implementation;Code redesign
+12.01.2022;1.4;1.4.1;PATCH;Emoji2 will not wrap instances of NumberKeyListener, allowing the locale to be configured by textview.;Bug Fixes;Change Implementation;Code redesign
+12.01.2022;1.4;1.4.1;PATCH;Appcompat will not wrap instances of NumberKeyListener passed to setKeyListener, allowing TextView to correctly configure the locale on NumberKeyListeners. (Ibf113, b/207119921);Bug Fixes;Change Implementation;Code redesign
+12.01.2022;1.4;1.4.1;PATCH;Fixes issue with all NumberKeyListener subclasses introduced in appcompat 1.4.0 that allowed unexpected characters such as punctuation to be input (b/207119921) (Iede7a, b/207119921);Bug Fixes;Fix wrong implementation;Bug fix
+17.11.2021; 1.4.; 1.4.0;MINOR;;;;
+17.11.2021; 1.4.; 1.4.0;MINOR;Library is now targeting Java 8 language level;Important changes since 1.3.0;Target Java 8;Support for external development tool
+17.11.2021; 1.4.; 1.4.0;MINOR;Updatable emoji support is enabled by default via the androidx.emoji2 library;Important changes since 1.3.1;Update support;Support for external development tool
+17.11.2021; 1.4.; 1.4.0;MINOR;Improved attribute inspection in Android Studio’s Layout Inspector (I02d55);Important changes since 1.3.2;Improve performance;Performance improvement
+17.11.2021; 1.4.; 1.4.0;MINOR;Added support for nested tinted resources and vector drawables in AppCompat resource loading backports. Note, however, that this means apps cannot override getDrawable() on a custom Resources object when backports are enabled. (Ia6b03, b/176129022);Important changes since 1.3.3;Add functionality;Add support for a new feature
+17.11.2021; 1.4.; 1.4.0;MINOR;Backported tintable background and check mark for CheckedTextView (I8575c);Important changes since 1.3.4;Code reorganization;Code redesign
+29.09.2021;1.4;1.4.0-beta01;PRE-RELEASE;;;;
+29.09.2021;1.4;1.4.0-beta01;PRE-RELEASE;AndroidX AppCompat Toolbar is now a MenuHost and can manage MenuProviders. (I5cd95);API Changes;Change Implementation;Code redesign
+29.09.2021;1.4;1.4.0-beta01;PRE-RELEASE;Fixed AppCompatProgressBar handling of layer-list progress bars (I6ece3, b/142004509);Bug Fixes;Fix wrong implementation;Bug fix
+29.09.2021;1.4;1.4.0-beta01;PRE-RELEASE;Correctly retain android:digits in AppCompatEditText, this fixes bug 193047889 introduced in AppCompat 1.4.0-alpha03. (I4b4fc, b/193047889);Bug Fixes;Change Implementation;Code redesign
+29.09.2021;1.4;1.4.0-beta01;PRE-RELEASE;Integrated OnReceiveContentListener SDK and support lib APIs. (Ic6914, b/173814913);Bug Fixes;Integrate changes;Code redesign
+30.06.2021;1.4;1.4.0-alpha03;PRE-RELEASE;;;;
+30.06.2021;1.4;1.4.0-alpha03;PRE-RELEASE;Library is now targeting Java 8 language level;"New Features
+";Update version numbers;Update dependency
+30.06.2021;1.4;1.4.0-alpha03;PRE-RELEASE;Add emoji2 support for more TextView subclasses (AppCompatMultiAutoCompleteTextView, AppCompatAutoCompleteTextView, AppCompatRadioButton, AppCompatCheckBox).;"New Features
+";Add functionality;Add support for a new feature
+30.06.2021;1.4;1.4.0-alpha03;PRE-RELEASE;Added an API to configure an InputConnection to use View.performReceiveContent to handle IME calls to InputConnection.commitContent. (I3a2ad);API Changes;Add functionality;Add support for a new feature
+30.06.2021;1.4;1.4.0-alpha03;PRE-RELEASE;Add support for EmojiCompat to AppCompatMultiAutoCompleteTextView (Ifece0);API Changes;Add functionality;Add support for a new feature
+30.06.2021;1.4;1.4.0-alpha03;PRE-RELEASE;Add support for EmojiCompat to AppCompatAutoCompleteTextView (Ia1f4b);API Changes;Add functionality;Add support for a new feature
+30.06.2021;1.4;1.4.0-alpha03;PRE-RELEASE;Add support for EmojiCompat to AppCompatRadioButton (If08af);API Changes;Add functionality;Add support for a new feature
+30.06.2021;1.4;1.4.0-alpha03;PRE-RELEASE;Add support for EmojiCompat to AppCompatCheckBox (I2b3bc);API Changes;Add functionality;Add support for a new feature
+30.06.2021;1.4;1.4.0-alpha03;PRE-RELEASE;Allow null KeyListener in AppCompatEditText. This reverses the non-null annotation that was added to AppCompatEditText in 1.4-alpha01 and restores the previous behavior when passed null. (I21482, b/189559345);API Changes;Change Implementation;Code redesign
+30.06.2021;1.4;1.4.0-alpha03;PRE-RELEASE;Add PopupMenu.setForceShowIcon for parity with platform APIs (I43bb3, b/182789798);API Changes;Add functionality;Add support for a new feature
+30.06.2021;1.4;1.4.0-alpha03;PRE-RELEASE;Fix bug in AppCompatEditText that will reset the inputType specified in XML to remove variations. This bug was introduced in AppCompat 1.4.0-alpha01. (I9df36, b/191061070);"Bug Fixes
+";Fix wrong implementation;Bug fix
+02.06.2021;1.4; 1.4.0-alpha02;PRE-RELEASE;;;;
+02.06.2021;1.4; 1.4.0-alpha02;PRE-RELEASE;Added AppCompatDialogFragment constructor that takes a layout ID (Icbf22, b/188119987);API Changes;Add functionality;Add support for a new feature
+02.06.2021;1.4; 1.4.0-alpha02;PRE-RELEASE;Improved layout inspector support (I02d55);API Changes;Improve performance;Performance improvement
+02.06.2021;1.4; 1.4.0-alpha02;PRE-RELEASE;Renamed package in emoji2-views-helper to androidx.emoji2.viewsintegration. This is a breaking change for AppCompat 1.4.0-alpha01, and apps must ensure AppCompat dependency is updated to use the new emoji2 version. (Ie8397);API Changes;Change naming;Code redesign
+02.06.2021;1.4; 1.4.0-alpha02;PRE-RELEASE;Fixed issue where stopped activities did not receive configuration changes from AppCompat-instrumented night mode changes. (I8fa8f, b/188681415);"Bug Fixes
+";Fix wrong implementation;Bug fix
+02.06.2021;1.4; 1.4.0-alpha02;PRE-RELEASE;"Fixed bug in AppCompatEditText which would cause views to be focusable even when android:focusable=""false"" was specified in the xml (bug introduced in AppCompat 1.4.0-alpha01) (Ib9412)";"Bug Fixes
+";Fix wrong implementation;Bug fix
+18.05.2021;1.4;1.4.0-alpha01;PRE-RELEASE;;;;
+18.05.2021;1.4;1.4.0-alpha01;PRE-RELEASE;Integrated EmojiCompat support to a variety of AppCompat widgets (Id409b, If7a1a, Ic262d, Ib5f4a, I4fb3c);API Changes;Integrate changes;Code redesign
+18.05.2021;1.4;1.4.0-alpha01;PRE-RELEASE;Added support for nested tinted resources and vector drawables in AppCompat resource loading backports. Note, however, that this means apps cannot override getDrawable() on a custom Resources object when backports are enabled. (Ia6b03, b/176129022);API Changes;Add functionality;Add support for a new feature
+18.05.2021;1.4;1.4.0-alpha01;PRE-RELEASE;Improved layout inspector support (I6d771);API Changes;Improve layout;Maintainability improvement
+18.05.2021;1.4;1.4.0-alpha01;PRE-RELEASE;Fixed a scenario where calling setSupportActionBar after setting the window callback would overwrite the callback. (Ie43ee, b/186791590);Bug Fixes;Fix wrong implementation;Bug fix
+18.05.2021;1.4;1.4.0-alpha01;PRE-RELEASE;Added a workaround for an issue on SDKs 29 and 30 where ColorStateListDrawable resources cloned from the drawable cache don't load a default color until they receive a state change. (Iedb4b);Bug Fixes;Fix wrong implementation;Bug fix
+18.05.2021;1.4;1.4.0-alpha01;PRE-RELEASE;Avoid NPE when handling null custom selection action mode callbacks on AppCompat-backed views. (I033c7, b/173435375);Bug Fixes;Change Implementation;Code redesign
+18.05.2021;1.4;1.4.0-alpha01;PRE-RELEASE;From AppCompat 1.5.0: AppCompat now depends on Fragment Fragment 1.3.4. (I13089);"Dependency Updates
+";Update version numbers;Update dependency
+18.05.2021;1.4;1.4.0-alpha01;PRE-RELEASE;From AppCompat 1.5.0: AppCompat now depends on Activity 1.2.3. (I815b7);"Dependency Updates
+";Update version numbers;Update dependency
+18.05.2021;1.4;1.4.0-alpha01;PRE-RELEASE;From AppCompat 1.5.0: AppCompat now depends on Lifecycle 2.3.1. (Ia75a1);"Dependency Updates
+";Update version numbers;Update dependency
+18.05.2021;1.4;1.4.0-alpha01;PRE-RELEASE;Backport tintable background and check mark for CheckedTextView (I8575c);External Contribution;Add functionality;Add support for a new feature
+21.07.2021;1.3;1.3.1;PATCH;;;;
+21.07.2021;1.3;1.3.1;PATCH;AppCompat now depends on Activity 1.2.4 and Fragment 1.3.6, making the fixes from those releases included by default when using AppCompat 1.3.1. (I8fbec);Dependency Updates;Update version numbers;Update dependency
+18.05.2021;1.3;1.3.0;MINOR;;;;
+18.05.2021;1.3;1.3.0;MINOR;Fixed propagation of android:theme attributes across <include>d layouts on pre-Lollipop devices;Important changes since 1.2.0;Fix wrong implementation;Bug Fix
+18.05.2021;1.3;1.3.0;MINOR;Reduced library size by converting many PNG resources to VectorDrawables;Important changes since 1.2.1;Change Implementation;Code redesign
+18.05.2021;1.3;1.3.0;MINOR;Added support for drag-and-drop events to AppCompatEditText with OnReceiveContentListener;Important changes since 1.2.2;Add functionality;Add support for a new feature
+18.05.2021;1.3;1.3.0;MINOR;Updated to support changes to Android 11 window inset handling;Important changes since 1.2.3;Update version numbers;Update dependency
+18.05.2021;1.3;1.3.0;MINOR;Added support for RTL in menu items with icons;Important changes since 1.2.4;Add functionality;Add support for a new feature
+18.05.2021;1.3;1.3.0;MINOR;Added support for inserting rich content (ex. pasting an image) in AppCompatEditText;Important changes since 1.2.5;Add functionality;Add support for a new feature
+18.05.2021;1.3;1.3.0;MINOR;"appcompat updated many of its transitive dependencies to support new functionality and fixes:Updated from Fragment 1.1.0 to Fragment 1.3.4; Updated from Activity 1.0.0 to Activity 1.2.3; Updated from Lifecycle 2.0.0 to Lifecycle 2.3.1.; Updated from Core 1.3.0 to Core 1.5.0";Dependency Updates;Update dependencies;Update dependency
+24.03.2021;1.3;1.3.0-rc01;PRE-RELEASE;;;;
+24.03.2021;1.3;1.3.0-rc01;PRE-RELEASE;Prevents permissions from being revoked prematurely when handling IME content insertion;Bug Fixes;Fix wrong implementation;Bug fix
+24.03.2021;1.3;1.3.0-rc01;PRE-RELEASE;AppCompat now depends on Activity 1.2.2, Fragment 1.3.2, and Lifecycle 2.3.1. (Ia75a1);Dependency Updates;Update dependency;Update dependency
+24.03.2021;1.3;1.3.0-rc01;PRE-RELEASE;Fixed propagation of android:theme attribute across <include>d layouts on pre-Lollipop devices (Simon Bergner at Opera);External Contribution;Fix wrong implementation;Bug fix
+13.01.2021;1.3;1.3.0-beta01;PRE-RELEASE;;;;
+13.01.2021;1.3;1.3.0-beta01;PRE-RELEASE;Theme-level action mode drawables have been replaced with vector sources. This may cause slight changes in the visual appearance of individual icons. (I741a6);"New Features
+";Code changes;Code redesign
+13.01.2021;1.3;1.3.0-beta01;PRE-RELEASE;Integrated drag-and-drop (drop events) in AppCompatEditText with OnReceiveContentListener. (Ib26c9, b/175343405);API Changes;Integrate changes;Code redesign
+13.01.2021;1.3;1.3.0-beta01;PRE-RELEASE;Updated OnReceiveContentListener and related APIs. See androidx.core library changes for more details. (Ib4616, b/173814913);API Changes;Code changes;Code redesign
+13.01.2021;1.3;1.3.0-beta01;PRE-RELEASE;Moved widget.RichContentReceiverCompat to view.OnReceiveContentListener. (Ifdab7, b/173814913);API Changes;Code restructuring;Code redesign
+13.01.2021;1.3;1.3.0-beta01;PRE-RELEASE;APIs to supply and retrieve initial surrounding text have been backported to EditorInfoCompat. They allow IME apps to avoid additional IPC latency. (Ie3809);API Changes;Add functionality;Add support for a new feature
+19.08.2020;1.3;1.3.0-alpha02;PRE-RELEASE;;;;
+19.08.2020;1.3;1.3.0-alpha02;PRE-RELEASE;AppCompatRatingBar PNG drawables have been replaced with vector sources. This may cause slight changes in the visual appearance of individual stars. (I6b99d);Bug Fixes;Code changes;Code redesign
+19.08.2020;1.3;1.3.0-alpha02;PRE-RELEASE;Update WindowInsetsCompat to Android 11 APIs (I3df9e);Bug Fixes;Update dependency;Update dependency
+19.08.2020;1.3;1.3.0-alpha02;PRE-RELEASE;Support RTL in menu items with icons (I2f5c5);Bug Fixes;Update dependency;Update dependency
+19.08.2020;1.3;1.3.0-alpha02;PRE-RELEASE;AppCompat has updated its dependency from Fragment 1.1.0 to Fragment 1.3.0-alpha08. It is strongly recommended to read through the Fragment 1.2.0 release notes to understand the major changes introduced in the previous Fragment release.;Dependency Updates;Update dependency;Update dependency
+19.08.2020;1.3;1.3.0-alpha02;PRE-RELEASE;AppCompat has updated its dependency from Activity 1.0.0 to Activity 1.2.0-alpha08. It is strongly recommended to read through the Activity 1.1.0 release notes to understand the major changes introduced in the previous Activity release.;Dependency Updates;Update dependency;Update dependency
+19.08.2020;1.3;1.3.0-alpha02;PRE-RELEASE;AppCompatActivity now uses the OnContextAvailableListener API introduced in Activity 1.2.0-alpha08 to set up the AppCompatDelegate. Any listeners added to subclasses of AppCompatActivity will run after this listener. (I513da);Dependency Updates;Update dependency;Update dependency
+20.05.2020;1.3;1.3.0-alpha01;PRE-RELEASE;;;;
+20.05.2020;1.3;1.3.0-alpha01;PRE-RELEASE;Add a new Lint rule to flag calls to setActionBar on activities that extend AppCompatActivity;New Features;Add functionality;Add support for a new feature
+20.05.2020;1.3;1.3.0-alpha01;PRE-RELEASE;Added support for ViewTreeLifecycleOwner from Lifecycle 2.3.0-alpha01, ViewTreeViewModelStoreOwner from Lifecycle 2.3.0-alpha03, and ViewTreeSavedStateRegistryOwner from SavedState 1.1.0-alpha01 when using a View within an AppCompatActivity. (b/151603528, aosp/1300264);New Features;Add functionality;Add support for a new feature
+20.05.2020;1.3;1.3.0-alpha01;PRE-RELEASE;Add common API for inserting rich content (e.g. pasting an image). The new callback provides a single API that apps can implement to support the different ways in which rich content may be inserted. For now the API is only added to AppCompatEditText and will be invoked for the following code paths:paste from the clipboard content insertion from the IME (InputConnection.commitContent) (I22bf7);New Features;Add functionality;Add support for a new feature
+20.05.2020;1.3;1.3.0-alpha01;PRE-RELEASE;From AppCompat 1.2.0-rc01: AppCompat no longer calls onMenuOpened() with a null menu. (b/142843126);Bug Fixes;Code changes;Code redesign
+20.05.2020;1.3;1.3.0-alpha01;PRE-RELEASE;Correctly resolve text link and hint colors on older devices when TextViewCompat.setTextAppearance is called with a text appearance style that has color state lists that reference theme color attributes (b/154702995);Bug Fixes;Fix wrong implementation;Bug fix
+20.05.2020;1.3;1.3.0-alpha01;PRE-RELEASE;;;;
+20.05.2020;1.3;1.3.0-alpha01;PRE-RELEASE;Fixed support for Configuration override use cases, including custom locales and font scales. See here for an example of how to correctly implement overrides using appcompat:1.2.0.;Major changes since 1.1.0;Fix wrong implementation;Bug fix
+20.05.2020;1.3;1.3.0-alpha01;PRE-RELEASE;Deprecated AppCompatDelegate.attachBaseContext(). If you are calling or overriding this method, use AppCompatDelegate.attachBaseContext2() instead.;Major changes since 1.1.1;Depricate functionality;Deprecate functionality
+20.05.2020;1.3;1.3.0-alpha01;PRE-RELEASE;Deprecated CollapsibleActionView. This interface is no longer needed, use the platform-provided android.view.CollapsibleActionView interface.;Major changes since 1.1.2;Depricate class;Deprecate functionality
+22.07.2020;1.2; 1.2.0-rc02;PRE-RELEASE;;;;
+22.07.2020;1.2; 1.2.0-rc02;PRE-RELEASE;Fixed an issue related to night mode where calling AppCompatDelegate.setDefaultNightMode from a dialog would occasionally fail to recreate activities and apply the new mode. (aosp/1348308, b/158923881);Bug Fixes;Fix wrong implementation;Bug fix
+14.05.2020;1.2;1.2.0-rc01;PRE-RELEASE;;;;
+14.05.2020;1.2;1.2.0-rc01;PRE-RELEASE;AppCompatDelegate.setLocalNightMode has been marked as requiring SDK version 17 or higher due to a platform issue with configuration changes leaking between Activities on earlier SDKs;API Changes;Version update;Update dependency
+14.05.2020;1.2;1.2.0-rc01;PRE-RELEASE;AppCompatDelegate.setLocalNightMode may now be called prior to Activity.attachBaseContext;Bug Fixes;Code behaviour changes;Code redesign
+14.05.2020;1.2;1.2.0-rc01;PRE-RELEASE;Fixed ActionBarOverlayLayout inset consumption which was incorrectly using the cached insets;Bug Fixes;Fix wrong implementation;Bug fix
+14.05.2020;1.2;1.2.0-rc01;PRE-RELEASE;AppCompat no longer calls onMenuOpened() with a null menu. (b/142843126);Bug Fixes;Code changes;Code redesign
+01.04.2020;1.2;1.2.0-beta;PRE-RELEASE;;;;
+01.04.2020;1.2;1.2.0-beta;PRE-RELEASE;"Added the following new lint rules that will flag incorrect usages of AppCompat in the following scenarios:
+Loading color state lists: suggests using ContextCompat and AppCompatResources APIs for backward compatibility
+Loading drawables: suggests using ContextCompat and ResourcesCompat APIs for backward compatibility
+Using color state lists with alpha attribute: flags missing android:alpha attribute that will lead to incorrect appearance on some platform versions
+Tinting image views: flags not using app:tint that will lead to incorrect appearance on older platform versions
+Using compound drawables and tinting on text views: suggests using compat attributes and APIs for backward compatibility";New Features;Add functionality;Add support for a new feature
+01.04.2020;1.2;1.2.0-beta;PRE-RELEASE;Fixed an issue where ActionBarOverlayLayout (window decor action) was not dispatching WindowInsets correctly.;Bug fixes;Fix wrong implementation;Bug fix
+01.04.2020;1.2;1.2.0-beta;PRE-RELEASE;Fixed issues in tinting drawables and text appearance on older versions of the platform;Bug fixes;Fix wrong implementation;Bug fix
+01.04.2020;1.2;1.2.0-beta;PRE-RELEASE;Fixed an issue where androidx.appcompat:appcompat:1.1.0 crashes webview when webview is long pressed (b/141351441);Bug fixes;Fix wrong implementation;Bug fix
+01.04.2020;1.2;1.2.0-beta;PRE-RELEASE;Implemented fixes for issues with base context manipulation and retrieving system services during activity start up;Bug fixes;Fix wrong implementation;Bug fix
+04.03.2020;1.2;1.2.0-alpha03;PRE-RELEASE;;;;
+04.03.2020;1.2;1.2.0-alpha03;PRE-RELEASE;Fixed an issue where the action mode status guard mistakenly extends into the navigation bar and has the wrong color (Ia4a09);Bug Fixes;Fix wrong implementation;Bug fix
+04.03.2020;1.2;1.2.0-alpha03;PRE-RELEASE;Fix issue where stopped Activities were not resuming on API Level 23 and below (I45201);Bug Fixes;Fix wrong implementation;Bug fix
+29.01.2020;1.2;1.2.0-alpha02;PRE-RELEASE;;;;
+29.01.2020;1.2;1.2.0-alpha02;PRE-RELEASE;Fixed issue where appcompat 1.1.0 crashes webview when long pressed (b/141351441);Bug Fixes;Fix wrong implementation;Bug fix
+29.01.2020;1.2;1.2.0-alpha02;PRE-RELEASE;Fixed drawable tinting on TextView relative to compound drawables on API Level 23 (aosp/1172194);Bug Fixes;Fix wrong implementation;Bug fix
+29.01.2020;1.2;1.2.0-alpha02;PRE-RELEASE;Ensured the base context is always a wrapper (aosp/1194355);Bug Fixes;Code changes;Code redesign
+29.01.2020;1.2;1.2.0-alpha02;PRE-RELEASE;Added some improvements to be more clever when modifying the base context configuration (aosp/1204543);Bug Fixes;Improve code;Add support for a new feature
+29.01.2020;1.2;1.2.0-alpha02;PRE-RELEASE;Disabled createConfigurationContext() for Robolectric (aosp/1186218);Bug Fixes;Code changes;Code redesign
+04.12.2019;1.2.0;1.2.0-alpha01;PRE-RELEASE;;;;
+04.12.2019;1.2.0;1.2.0-alpha01;PRE-RELEASE;Calls to PackageManager.getActivityInfo don't crash anymore under strict mode with boot-aware checks enabled;Bug Fixes;Fix wrong implementation;Bug fix
+04.12.2019;1.2.0;1.2.0-alpha01;PRE-RELEASE;Fixes for tinting drawables on AppCompatButton;Bug Fixes;Fix wrong implementation;Bug fix
+04.12.2019;1.2.0;1.2.0-alpha01;PRE-RELEASE;Fixes for tinting and text appearance on older versions of the platform;Bug Fixes;Fix wrong implementation;Bug fix
+05.09.2019;1.1;1.1.0;MINOR;;;;
+05.09.2019;1.1;1.1.0;MINOR;Dark Mode Improvements: MODE_NIGHT_AUTO and switching of dark/light based on the current time is now deprecated. Considering using an explicit setting, or MODE_NIGHT_AUTO_BATTERY.;Important changes since 1.0.0;Improve dark mode;Maintainability improvement
+05.09.2019;1.1;1.1.0;MINOR;Activity 1.0: AppCompatActivity now transitively extends from ComponentActivity from Activity 1.0.0 via Fragment 1.1.0. See the associated release notes for information on the changes in each library.;Important changes since 1.0.1;Code changes;Code redesign
+05.09.2019;1.1;1.1.0;MINOR;AppCompatActivity LayoutId constructor: Subclasses of AppCompatActivity can now optionally call into a constructor on AppCompatActivity that takes an R.layout ID, indicating the layout that should be set as the content view as an alternative to calling setContentView() in onCreate(). This does not change the requirement that your subclass have a no-argument constructor.;Important changes since 1.0.2;Code changes;Code redesign
+02.07.2019;1.1;1.1.0-rc01;PRE-RELEASE;;;;
+02.07.2019;1.1;1.1.0-rc01;PRE-RELEASE;DayNight now honors configChanges correctly (aosp/981105);Bug Fixes;Code changes;Code redesign
+02.07.2019;1.1;1.1.0-rc01;PRE-RELEASE;Only call onConfigurationChanged on started Activities (aosp/987483);Bug Fixes;Code changes;Code redesign
+05.06.2019; 1.1; 1.1.0-beta01;PRE-RELEASE;;;;
+05.06.2019; 1.1; 1.1.0-beta01;PRE-RELEASE;Make sure we clean up receivers in AppCompatDialogs (aosp/959376);Bug Fixes;Code restructuring;Code redesign
+05.06.2019; 1.1; 1.1.0-beta01;PRE-RELEASE;Add support for buttonGravity=center_vertical on Toolbar (b/130361721);Bug Fixes;Add functionality;Add support for a new feature
+05.06.2019; 1.1; 1.1.0-beta01;PRE-RELEASE;Fix spinner horizontal offset (b/79477181);Bug Fixes;Fix wrong implementation;Bug fix
+07.05.2019;1.1; 1.1.0-alpha05;PRE-RELEASE;;;;
+07.05.2019;1.1; 1.1.0-alpha05;PRE-RELEASE;;;;
+07.05.2019;1.1; 1.1.0-alpha05;PRE-RELEASE;setDefaultNightMode() now automatically recreates any started activities.;New Feature;Add functionality;Add support for a new feature
+07.05.2019;1.1; 1.1.0-alpha05;PRE-RELEASE;Various fixes to DayNight mode;Bug Fixes;Fix wrong implementation;Bug fix
+07.05.2019;1.1; 1.1.0-alpha05;PRE-RELEASE;Invalidate outline on any background change in ActionBar;Bug Fixes;Fix wrong implementation;Bug fix
+07.05.2019;1.1; 1.1.0-alpha05;PRE-RELEASE;Fix spinner widget scroll;Bug Fixes;Fix wrong implementation;Bug fix
+07.05.2019;1.1; 1.1.0-alpha05;PRE-RELEASE;Fix custom set window backgrounds being overridden in AlertDialog;Bug Fixes;Fix wrong implementation;Bug fix
+03.04.2019;1.1;1.1.0-alpha04;PRE-RELEASE;;;;
+03.04.2019;1.1;1.1.0-alpha04;PRE-RELEASE;Added new ThemeOverlay.AppCompat.DayNight family of themes. These should be used when using the DayNight feature.;New Feature;Add functionality;Add support for a new feature
+03.04.2019;1.1;1.1.0-alpha04;PRE-RELEASE;AppCompatActivity now contain a second constructor that takes a @LayoutRes int, which replaces the previous behavior of annotating your AppCompatActivity class with @ContentView. This approach works in both app and library modules. (b/128352521);New Feature;Add functionality;Add support for a new feature
+03.04.2019;1.1;1.1.0-alpha04;PRE-RELEASE;Pinned internal dependencies to stable versions where possible;Bug Fixes;Fix wrong implementation;Bug fix
+03.04.2019;1.1;1.1.0-alpha04;PRE-RELEASE;Fixed AppCompatSpinnerscrolling in dropdown mode )b/124274573);Bug Fixes;Fix wrong implementation;Bug fix
+03.04.2019;1.1;1.1.0-alpha04;PRE-RELEASE;Only calls applyOverrideConfiguration() if required for DayNight;Bug Fixes;Code changes;Code redesign
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;;;;
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;The new appcompat-resources library contains APIs that allow apps to load and tint drawables (including vector drawables) on older versions of the platform. This is the same functionality that was previously part of the appcompat module, but is now available without the overhead of the full appcompat backport of Material design that includes widgets, dialogs, night mode etc.;New Features;Add functionality;Add support for a new feature
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;Major fixes to DayNight mode support;New Features;Fix wrong implementation;Bug fix
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;New MODE_NIGHT_AUTO_BATTERY option for DayNight mode;New Features;Add functionality;Add support for a new feature
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;Drawable tinting in AppCompatTextView;New Features;Add functionality;Add support for a new feature
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;Toolbar overflow can now be styled with themed color state lists;New Features;Add functionality;Add support for a new feature
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;Menu icons can now use colors that reference theme attributes;New Features;Add functionality;Add support for a new feature
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;The new app:menu attribute can be set on a Toolbar to provide the menu content at inflation time;New Features;Add functionality;Add support for a new feature
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;Fixed default tint mode on ImageView on version 21;Bug Fixes;Fix wrong implementation;Bug fix
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;Fixed spinner popup incorrect dismissal on device rotation;Bug Fixes;Fix wrong implementation;Bug fix
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;Fixed DayNight does not respect configChanges in manifest;Bug Fixes;Fix wrong implementation;Bug fix
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;Fixed switching to MODE_NIGHT_FOLLOW_SYSTEM doesn't work (b/111345020);Bug Fixes;Fix wrong implementation;Bug fix
+13.03.2019;1.1; 1.1.0-alpha03;PRE-RELEASE;Fixed WebView resets DayNight Resources (b/37124582);Bug Fixes;Fix wrong implementation;Bug fix
+07.02.2019; 1.1; 1.1.0-alpha02;PRE-RELEASE;;;;
+07.02.2019; 1.1; 1.1.0-alpha02;PRE-RELEASE;Extracted resource-specific drawable handling into a hook (aosp/870976);New features;Code refactoring ;Maintainability improvement
+07.02.2019; 1.1; 1.1.0-alpha02;PRE-RELEASE;Allowed Toolbar titleTextColor and subtitleTextColor to use a ColorStateList and added ColorStateList overloads of the setTitleTextColor and setSubtitleTextColor methods (aosp/867489);New features;Code changes ;Code redesign
+07.02.2019; 1.1; 1.1.0-alpha02;PRE-RELEASE;Fixed fontFamily not working on pre API 24 (aosp/807054);Bug fixes;Fix wrong implementation;Bug fix
+07.02.2019; 1.1; 1.1.0-alpha02;PRE-RELEASE;Fixed bug where textFontWeight did not work when an activity extends from AppCompatActivity (aosp/847640);Bug fixes;Fix wrong implementation;Bug fix
+07.02.2019; 1.1; 1.1.0-alpha02;PRE-RELEASE;Fixed bug that caused the title text on the spinner widget popup (when using dialog mode) to not use the font specified in the fontFamily (aosp/789994);Bug fixes;Fix wrong implementation;Bug fix
+07.02.2019; 1.1; 1.1.0-alpha02;PRE-RELEASE;Fix bug that prevented widgets AppCompatCheckBox and AppCompatRadioButton from be able to change the background tint (aosp/825160);Bug fixes;Fix wrong implementation;Bug fix
+07.02.2019; 1.1; 1.1.0-alpha02;PRE-RELEASE;Fixed bug where AppCompat did not override android: list styles (aosp/862350);Bug fixes;Fix wrong implementation;Bug fix
+03.12.2018; 1.1; 1.1.0-alpha01;PRE-RELEASE;;;;
+03.12.2018; 1.1; 1.1.0-alpha01;PRE-RELEASE;AppCompatTextView now supports app:drawableLeftCompat, app:drawableTopCompat, app:drawableRightCompat, app:drawableBottomCompat, app:drawableStartCompat and app:drawableEndCompat compound drawables, supporting backported drawable types such as VectorDrawableCompat.;New Features;Code changes;Code redesign
+03.12.2018; 1.1; 1.1.0-alpha01;PRE-RELEASE;AppCompatCheckBox and AppCompatRadioButton’s default drawables now animate check state changes.;New Features;Code changes;Code redesign
+03.12.2018; 1.1; 1.1.0-alpha01;PRE-RELEASE;aosp/740385: ActionBarOverlayLayout now implements NestedScrollingParent2 and NestedScrollingParent3, enabling it to facilitate the latest functionality in nested scrolling 3. If developer code currently overrides ActionBarOverLayLayout.onNestedScroll(View, int, int, int, int), it will likely no longer be called and ActionBarOverLayLayout.onNestedScroll(View, int, int, int, int, int, int[]) should be overridden instead.;API changes;Code changes;Code redesign
+07.11.2018;1.0;1.0.2;PATCH;;;;
+07.11.2018;1.0;1.0.2;PATCH;Fixed bug where PrecomputedTextCompat would crash when used with RTL AppCompatTextView. b/113070424;Bug Fixes;Fix wrong implementation;Bug fix
+07.11.2018;1.0;1.0.0;MAJOR;;;;
+;;;;AnimatedStateListDrawableCompat provides animated transitions between drawable states.;New Features;Add functionality;Add support for a new feature
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
