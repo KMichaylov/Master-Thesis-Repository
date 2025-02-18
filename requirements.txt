@@ -9,3 +9,4 @@ spacy
 xgboost
 wordcloud
 gensim
+imblearn
