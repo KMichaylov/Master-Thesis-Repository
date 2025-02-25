@@ -181,7 +181,7 @@
 12.07.2014;2.0;2.0;MINOR;"	Core's OptionConverter support for \b is broken (affects PatternLayout). Fixes LOG4J2-686.";Broken support;Bug fix;;;;;;;;;;;;;;;;;;;
 12.07.2014;2.0;2.0;MINOR;Rename org.apache.logging.log4j.core.util.Closer.closeSilent() to closeSilently(). Fixes LOG4J2-687.;Renaming;Maintainability improvement;;;;;;;;;;;;;;;;;;;
 12.07.2014;2.0;2.0;MINOR;Make org.apache.logging.log4j.core.layout.PatternLayout immutable. Fixes LOG4J2-688.;Dependency update;Update dependency;;;;;;;;;;;;;;;;;;;
-12.07.2014;2.0;2.0;MINOR;Update Jackson to 2.4.1. Fixes LOG4J2-689.;Dependency update;;;;;;;;;;;;;;;;;;;;
+12.07.2014;2.0;2.0;MINOR;Update Jackson to 2.4.1. Fixes LOG4J2-689.;Dependency update;Update dependency;;;;;;;;;;;;;;;;;;;
 12.07.2014;2.0;2.0;MINOR;Some exceptions are not logged when configuration problems are detected. Fixes LOG4J2-707.;Fix exceptions;Bug fix;;;;;;;;;;;;;;;;;;;
 12.07.2014;2.0;2.0;MINOR;"Update Apache Commons Logging to 1.2 from 1.1.3. Fixes LOG4J2-709.	";Update dependency;Update dependency;;;;;;;;;;;;;;;;;;;
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;;;;;;;;;;;;;;;;;;;;;;
