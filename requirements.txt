@@ -5,7 +5,6 @@ numpy
 nltk
 openpyxl
 networkx
-spacy
 xgboost
 wordcloud
 gensim
