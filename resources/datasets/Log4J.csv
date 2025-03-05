@@ -187,23 +187,23 @@
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;;;
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;RollingFile and RollingRandomAccessFile now write the layout footer before rollover. Fixes LOG4J2-675.;Change behaviour;Code redesign
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;RollingRandomAccessFile now writes the layout header after rollover. Fixes LOG4J2-581. Thanks to Alexander Khokhlov.;Change behaviour;Code redesign
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;RollingFileManager now correctly honours the bufferedIO configuration after rollover. Fixes LOG4J2-622. Thanks to Farooq Khan.;Fix wrong implementation;Bug Fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;RollingFileManager now correctly honours the bufferedIO configuration after rollover. Fixes LOG4J2-622. Thanks to Farooq Khan.;Fix wrong implementation;Bug fix
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Made RollingFileAppender buffer size configurable. Fixes LOG4J2-674.;Change buffer size;Code redesign
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Improved documentation regarding log4j status logger. Fixes LOG4J2-141. Thanks to Joern Huxhorn.;Improve docs;Documentation
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;"Fixed issue with ""Reconfigure using XML below"" function in JMX Client GUI. ConfigurationSource is now a top-level class and can be obtained with Configuration.getConfigurationSource(). LoggerContext.getConfiguration().getConfigurationSource() provides a reliable public method for obtaining a logger context's configuration location and content. Fixes LOG4J2-539. Thanks to Colin Froggatt.";Fix wrong implementation;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Invalid XML configuration files do not prevent the config file from being checked again. Fixes LOG4J2-619. Thanks to Scott Harrington.;Fix XML configuration files;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;JMX: Updating a Logger's level via jConsole now correctly takes effect. Fixes LOG4J2-637. Thanks to Mansoor Sajjad, Jon Wilmoth.;Fix jConsole;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Correctly process log events when combining AsyncLoggers with AsyncAppender. Fixes LOG4J2-668.;Fix wrong implementation;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Prevent NPE when combining AsyncLoggers with AsyncLoggerConfigs. Fixes LOG4J2-669.;Fix implementaion;Bug Fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;"Fixed issue with ""Reconfigure using XML below"" function in JMX Client GUI. ConfigurationSource is now a top-level class and can be obtained with Configuration.getConfigurationSource(). LoggerContext.getConfiguration().getConfigurationSource() provides a reliable public method for obtaining a logger context's configuration location and content. Fixes LOG4J2-539. Thanks to Colin Froggatt.";Fix wrong implementation;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Invalid XML configuration files do not prevent the config file from being checked again. Fixes LOG4J2-619. Thanks to Scott Harrington.;Fix XML configuration files;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;JMX: Updating a Logger's level via jConsole now correctly takes effect. Fixes LOG4J2-637. Thanks to Mansoor Sajjad, Jon Wilmoth.;Fix jConsole;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Correctly process log events when combining AsyncLoggers with AsyncAppender. Fixes LOG4J2-668.;Fix wrong implementation;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Prevent NPE when combining AsyncLoggers with AsyncLoggerConfigs. Fixes LOG4J2-669.;Fix implementaion;Bug fix
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Create an appender to route log events to the ServletContext log. Fixes LOG4J2-42.;Add appender;Add support for a new feature
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;upport default value for missing key in look ups with fallbacking to looking in the properties map. Fixes LOG4J2-419. Thanks to Woonsan Ko.;Add support;Add support for a new feature
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;FlumeAvroManager now always uses a client type of default_failover. Fixes LOG4J2-563. Thanks to Michael Friedmann.;Support client type;Code redesign
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Allow configuration files to be located as Servlet Context resources. Fixes LOG4J2-554.;Change policy;Code redesign
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Reset rollover time when size rollover is triggered. Fixes LOG4J2-535.;Fix implementaion;Bug Fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Reset rollover time when size rollover is triggered. Fixes LOG4J2-535.;Fix implementaion;Bug fix
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Moved plugin cache file to META-INF for OSGi compatibility. Fixes LOG4J2-664.;Move plugin cache;Code redesign
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Fix NPE that can be caused by a null ThreadContextClassLoader. Fixes LOG4J2-640.;Fix;Bug Fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Fix NPE that can be caused by a null ThreadContextClassLoader. Fixes LOG4J2-640.;Fix;Bug fix
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Add Vagrantfile for testing in GNU+Linux. Fixes LOG4J2-655.;Add feature;Add support for a new feature
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Log4j 2 throws ArrayIndexOutOfBoundsException. Fixes LOG4J2-651.;Fix exception;Bug Fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Log4j 2 throws ArrayIndexOutOfBoundsException. Fixes LOG4J2-651.;Fix exception;Bug fix
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Add log4j-perf module to provide a home for all log4j performance tests. Add support for JMH microbenchmark performance tests. Fixes LOG4J2-654.;Add module;Add support for a new feature
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Add support for default plugin values and attributes. Fixes LOG4J2-652.;Add support;Add support for a new feature
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Add support for types other than String for plugin factory values/attributes. Fixes LOG4J2-598.;Add support;Add support for a new feature
@@ -211,28 +211,28 @@
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Upgrade to Flume 1.5.0. Fixes LOG4J2-647.;Dependency update;Update dependency
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Implement a SecureSocketAppender and secure server (SSL/TLS). Fixes LOG4J2-644.;Secure server;Add support for a new feature
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Merge the TLS Syslog appender into the Syslog appender. Fixes LOG4J2-646.;Code changes;Code redesign
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Perform reconfiguration in a separate thread to prevent deadlocks. Fixes LOG4J2-620.;Fix threading;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Override commons-logging dependency version in tests. Fixes LOG4J2-641.	;Fix dependencies;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Prevent NPE in AsyncLogger and AsyncLoggerConfig if logger is used after log4j has been shut down. Fixes LOG4J2-639. Thanks to Mck SembWever.	;Fix Bug;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;FailoverAppender was not resetting its status after the primary appender recovered. Fixes LOG4J2-469.;Fix wrong implementation;Bug Fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Perform reconfiguration in a separate thread to prevent deadlocks. Fixes LOG4J2-620.;Fix threading;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Override commons-logging dependency version in tests. Fixes LOG4J2-641.	;Fix dependencies;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Prevent NPE in AsyncLogger and AsyncLoggerConfig if logger is used after log4j has been shut down. Fixes LOG4J2-639. Thanks to Mck SembWever.	;Fix Bug;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;FailoverAppender was not resetting its status after the primary appender recovered. Fixes LOG4J2-469.;Fix wrong implementation;Bug fix
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Generate MDC properties as a JSON map in JSONLayout. Fixes LOG4J2-623.;Generate MDC properties;Add support for a new feature
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Made RollingRandomAccessFileAppender buffer size configurable. Fixes LOG4J2-566. Thanks to Luigi Alice.;Change buffer size;Code redesign
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Resolved issue where AsyncAppender dropped events if queue still contained events when application is stopped. Fixes LOG4J2-520. Thanks to JavaTech, Andre Bogus.;Fix issue;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Resolved a problem with the previous solution for LOG4J2-392 that resulted in dropped events when using AsyncLoggerConfig with slow appenders when application is stopped. Fixes LOG4J2-392. Thanks to Andre Bogus.	;Fix problem;Bug Fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Resolved issue where AsyncAppender dropped events if queue still contained events when application is stopped. Fixes LOG4J2-520. Thanks to JavaTech, Andre Bogus.;Fix issue;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Resolved a problem with the previous solution for LOG4J2-392 that resulted in dropped events when using AsyncLoggerConfig with slow appenders when application is stopped. Fixes LOG4J2-392. Thanks to Andre Bogus.	;Fix problem;Bug fix
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;The OSGi version of log4j-web imports Servlet 2.5 at minimum instead of 3.0. Fixes LOG4J2-613.;Update dependency;Update dependency
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Unit tests are now less verbose during the build process. Fixes LOG4J2-602.;Improve tests;Quality assurance
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Fix shutdown thread memory leak in servlet containers. Fixes LOG4J2-570.;Fix memory leak;Memory improvement
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Use Clock to generate all log event timestamps, not just for Async Loggers. Fixes LOG4J2-628.;Fix wrong implementation;Bug Fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Use Clock to generate all log event timestamps, not just for Async Loggers. Fixes LOG4J2-628.;Fix wrong implementation;Bug fix
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Document the system properties used in Log4J 2. Fixes LOG4J2-629.;Add documentation;Documentation
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;	Make Throwable transient in ThrowableProxy. Fixes LOG4J2-542.;Make Throwable transient;Code redesign
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Update SLF4J to 1.7.7. Fixes LOG4J2-617.;Update dependency;Update dependency
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Update Jackson to 2.3.3. Fixes LOG4J2-616.;Update dependency;Update dependency
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;During shutdown, a NullPointerException could be thrown due to the NullConfiguration class no longer being available to the ClassLoader. Fixes LOG4J2-440.;Fix NullPointerException;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Cyclic dependency with log4j-slf4j-impl in OSGi. Fixes LOG4J2-346.;Fix cyclic dependency;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;The log4j-1.2-api module didn't export any packages to OSGi. Fixes LOG4J2-345.;Fix module;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Password data from the NoSQL plugins no longer shows up in cleartext in debug logging. Fixes LOG4J2-605.;Fix leaking password;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;A StringIndexOutOfBounds exception could occur during property substitution. Fixes LOG4J2-448. Thanks to X86core.;Fix exception;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;StatusLogger was not skipping multiple instances of the FQCN class, causing messages from classes in the Verbose list to be printed. Fixes LOG4J2-597.;Fix behaviour;Bug Fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;During shutdown, a NullPointerException could be thrown due to the NullConfiguration class no longer being available to the ClassLoader. Fixes LOG4J2-440.;Fix NullPointerException;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Cyclic dependency with log4j-slf4j-impl in OSGi. Fixes LOG4J2-346.;Fix cyclic dependency;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;The log4j-1.2-api module didn't export any packages to OSGi. Fixes LOG4J2-345.;Fix module;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Password data from the NoSQL plugins no longer shows up in cleartext in debug logging. Fixes LOG4J2-605.;Fix leaking password;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;A StringIndexOutOfBounds exception could occur during property substitution. Fixes LOG4J2-448. Thanks to X86core.;Fix exception;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;StatusLogger was not skipping multiple instances of the FQCN class, causing messages from classes in the Verbose list to be printed. Fixes LOG4J2-597.;Fix behaviour;Bug fix
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Add support for multiple parents to Markers. Fixes LOG4J2-585. Thanks to Bruce Brouwer.;Add support;Add support for a new feature
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Introduce Java annotation processor as the new plugin pre-caching mechanism. This is available in log4j-core. All custom plugins created before this should be re-built against the current log4j-core. Fixes LOG4J2-595.;Add Java annotation processor;Add support for a new feature
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Renamed SLF4J logger class to Log4jLogger. Fixes LOG4J2-564.;Rename class;Maintainability improvement
@@ -240,8 +240,8 @@
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Add org.apache.logging.log4j.Logger.getLevel(). Fixes LOG4J2-576.;Add function;Add support for a new feature
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Make Blocking the default WaitStrategy for Async Loggers. Fixes LOG4J2-574.;Change strategy;Code redesign
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Introduce ExtendedLogger interface to facilitate implementing and extending Loggers. Fixes LOG4J2-555. Thanks to Bruce Brouwer.;Add interface;Add support for a new feature
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;SyslogAppenderTest and RFC5424LayoutTest were failing in Java 8. Fixes LOG4J2-560.;Fix errors;Bug Fix
-21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Allow spaces around commas in Configuration's package attribute. Fixes LOG4J2-561. Thanks to vibin.;Fix behaviour;Bug Fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;SyslogAppenderTest and RFC5424LayoutTest were failing in Java 8. Fixes LOG4J2-560.;Fix errors;Bug fix
+21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Allow spaces around commas in Configuration's package attribute. Fixes LOG4J2-561. Thanks to vibin.;Fix behaviour;Bug fix
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Have Logger API expose a PrintWriter instead of custom LoggerStream. Fixes LOG4J2-547. Thanks to Bruce Brouwer.;Change exposure;Code redesign
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;Add EncodingPatternConverter to escape newlines and HTML special characters. Fixes LOG4J2-439. Thanks to Bruce Brouwer.;Add class;Add support for a new feature
 21.06.2014;2.0;2.0-rc2;PRE-RELEASE;	Allow header and footer to be specified as lookup patterns in PatternLayout. Fixes LOG4J2-496.;Change lookup patterns;Code redesign
@@ -329,14 +329,14 @@
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Fix table of contents generation in pdf. Fixes LOG4J2-226.;Fix docs;Documentation
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Allow classpath scheme when specifying configuration file location as a system property. Fixes LOG4J2-395. Thanks to Abhinav Shah.;Allow for specification;Add support for a new feature
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Initialize PluginManager once during configuration. Move advertisement setup into BaseConfiguration. Fixes LOG4J2-393.;Code moving;Maintainability improvement
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;FlumePersistentManager now handles LockConflictExceptions in Berkeley Db. Fixes LOG4J2-391. Thanks to Kamal Bahadur.;Fix error;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;FlumePersistentManager now handles LockConflictExceptions in Berkeley Db. Fixes LOG4J2-391. Thanks to Kamal Bahadur.;Fix error;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Allow the default file rollover strategy to define the compression level. Fixes LOG4J2-399.;Allow to define compression level;Add support for a new feature
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Add TLSAppender. Also added missing license headers to several files. Fixes LOG4J2-338. Thanks to Tibor Benke.;Add new class;Add support for a new feature
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Use rollover date when substituting ${date} in the filePattern. Fixes LOG4J2-380.;Change behaviour;Code redesign
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Added FAQ page to the site. Fixes LOG4J2-253.;Add FAQ;Documentation
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Add a diagram to the site (FAQ page) that explains when to use which jar. Fixes LOG4J2-362.;Add diagram;Documentation
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Centralized reflective use of Reflection#getCallerClass and properly handled its instability in various versions of Java. Fixes LOG4J2-322.;Centralize behaviour;Code redesign
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Reset the Configuration if the ClassLoaderContextSelector creates a LoggerContext without a configuration location and then is later provided one. Fixes LOG4J2-293.;Fix wrong implementation;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Reset the Configuration if the ClassLoaderContextSelector creates a LoggerContext without a configuration location and then is later provided one. Fixes LOG4J2-293.;Fix wrong implementation;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Changed the ConfigurationFactory to recognize and properly use the classpath: URI scheme in addition to the classloader: URI scheme. Fixes LOG4J2-293. Thanks to Abhinav Shah.;Change code;Code redesign
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Changed the Servlet 3.0 auto-initializer so that it does nothing in a Servlet 2.5 or older application. This ensures behavioral consistency across containers. Fixes LOG4J2-359. Thanks to Abhinav Shah.;Change code;Code redesign
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Add more options to PatternLayout to display more detailed information about a Throwable. Fixes LOG4J2-374. Thanks to Tibor Benke.;Add more options;Add support for a new feature
@@ -344,33 +344,33 @@
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;[Pattern Layout] Customize level names to lower-case. Fixes LOG4J2-384.	;Add customization;Maintainability improvement
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Add support for multiple SD-ELEMENTs in a RFC 5424 syslog message. Fixes LOG4J2-355. Thanks to Tibor Benke.;Add support;Add support for a new feature
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Cleaned up tests and cleared up documentation for the JPA appender following the resolution of EclipseLink issue #412454.;Clean codebase;Maintainability improvement
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Fixed issue where SMTPAppender did not send mails with error or fatal level without prior info event. Fixes LOG4J2-310. Thanks to Olivier Lemasle.;Fix issue;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Fixed issue where SMTPAppender did not send mails with error or fatal level without prior info event. Fixes LOG4J2-310. Thanks to Olivier Lemasle.;Fix issue;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;	Add PatternLayout constructor to Log4j 1.2 bridge for Velocity. Fixes LOG4J2-368.;Add class;Add support for a new feature
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Match artifact ids with Maven module names. Fixes LOG4J2-333. Thanks to Hervé Boutemy.;Improve matching ids;Maintainability improvement
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Add WebLookup to retrieve information from the ServletContext. Fixes LOG4J2-364. Thanks to David Nault.;Add class;Add support for a new feature
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;JMS appenders send two messages for one append. Fixes LOG4J2-367. Thanks to David Parry.;Fix wrong implementation;Bug Fix
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Double stack trace logging when using %throwable in %style and %highlight. Fixes LOG4J2-319.;Fix wrong implementation;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;JMS appenders send two messages for one append. Fixes LOG4J2-367. Thanks to David Parry.;Fix wrong implementation;Bug fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Double stack trace logging when using %throwable in %style and %highlight. Fixes LOG4J2-319.;Fix wrong implementation;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Allow Plugins to have aliases. Fixes LOG4J2-360.;Allow behaviour;Add support for a new feature
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;	NoSQLAppender using MongoDB provider ignores username and password attributes Fixes LOG4J2-358.;Fix error;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;	NoSQLAppender using MongoDB provider ignores username and password attributes Fixes LOG4J2-358.;Fix error;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Create a JSON Layout. Fixes LOG4J2-356.;Add layout;Add support for a new feature
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Removed unnecessary generics from Appender interface and implementing classes. Fixes LOG4J2-343. Thanks to Henning Schmiedehausen.;Remove unnecessary things;Maintainability improvement
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;[OSGi] wrong Fragment-Host in manifest files. Fixes LOG4J2-351. Thanks to Roland Weiglhofer.;Fix error;Bug Fix
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;AsyncLogger errors after multiple calls to LoggerContext.reconfigure(). Fixes LOG4J2-336. Thanks to Andre Bogus.;Fix error;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;[OSGi] wrong Fragment-Host in manifest files. Fixes LOG4J2-351. Thanks to Roland Weiglhofer.;Fix error;Bug fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;AsyncLogger errors after multiple calls to LoggerContext.reconfigure(). Fixes LOG4J2-336. Thanks to Andre Bogus.;Fix error;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Give the AsyncAppender thread a more descriptive name for easier debugging/profiling. Fixes LOG4J2-347. Thanks to David Phillips.;Improve readability;Maintainability improvement
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;	Modified documentation to refer to SLF4J Binding instead of SLF4J Bridge. Fixes LOG4J2-332. Thanks to Hervé Boutemy.;Adapt documentation;Documentation
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Ignore xml:base attributes. Fixes LOG4J2-342.;Fix error;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Ignore xml:base attributes. Fixes LOG4J2-342.;Fix error;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Insure jars and distributions only have a single License and Notice file. Fixes LOG4J2-309.;Ensure standard;Maintainability improvement
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Enable XInclude for XML configurations. Fixes LOG4J2-341.	;Enable configuration;Code redesign
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;JPAAppender stops logging because META-INF/log4j-provider.properties is left open. Fixes LOG4J2-320.;Fix error;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;JPAAppender stops logging because META-INF/log4j-provider.properties is left open. Fixes LOG4J2-320.;Fix error;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;FlumePersistentManager's writer thread had high CPU usage. Fixes LOG4J2-335.;Lower CPU usage;Performance improvement
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Removed erroneous check for affected MongoDB records, which always returns zero on inserts. Fixes LOG4J2-331.;Remove unnecessary things;Maintainability improvement
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Added a BSON Transformer so that MongoDB can persist Log4j events. Fixes LOG4J2-330.;Add class;Add support for a new feature
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;StatusLogger now only creates StatusData objects if they are the appropriate logging level. Fixes LOG4J2-329.;Fix wrong implementation;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;StatusLogger now only creates StatusData objects if they are the appropriate logging level. Fixes LOG4J2-329.;Fix wrong implementation;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;FlumePersistentManager was calling Berkeley DB's count method too frequently. Fixes LOG4J2-328.;Improve performance;Performance improvement
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Additional fix to make AsyncAppender threads daemon threads and improve their thread name. Fixes LOG4J2-280.;Fix threads deamon;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Additional fix to make AsyncAppender threads daemon threads and improve their thread name. Fixes LOG4J2-280.;Fix threads deamon;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;The slf4j-ext jar is now an optional dependency of the SLF4J bridge. Fixes LOG4J2-165.;Add optional dependency;Support for external development tool
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Allow shutdown hook to be disabled in the configuration. Fixes LOG4J2-318.;Allow hook to be disabled;Add support for a new feature
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;RoutingAppender's default Route can now be an appender reference. Fixes LOG4J2-166.;Fix error;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;RoutingAppender's default Route can now be an appender reference. Fixes LOG4J2-166.;Fix error;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Add JNDILookup plugin. Fixes LOG4J2-313. Thanks to Woonsan Ko.;Add plugin;Add support for a new feature
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Add getThrowable method to ThrowableProxy. Fixes LOG4J2-299.;Add method;Add support for a new feature
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;ThrowableProxy no longer extends Throwable. Fixes LOG4J2-216.;Refactor code;Maintainability improvement
@@ -386,7 +386,7 @@
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Update Jackson dependency to 1.9.13 from 1.9.11. Fixes LOG4J2-387.;Update dependency;Update dependency
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Ease porting from 1.x Logger.getRootLogger(): add LogManager.getRootLogger(). Fixes LOG4J2-305.;Facilitate porting;Maintainability improvement
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Fixed Async Loggers memory leak. Fixes LOG4J2-304.;Fix memory leak;Memory improvement
-14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Fixed JDBC, JPA, and NoSQL appenders so that the failover appender properly fails over on error. Fixes LOG4J2-291.;Fix error;Bug Fix
+14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Fixed JDBC, JPA, and NoSQL appenders so that the failover appender properly fails over on error. Fixes LOG4J2-291.;Fix error;Bug fix
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;	Improved site by adding quick jump-off page and menu for Javadoc links for all components.;Improve site;Documentation
 14.09.2013;2.0;2.0-beta9;PRE-RELEASE;Logger.info(Message) Javadoc is incorrect. Fixes LOG4J2-397. Thanks to Yonatan Graber.;Fix javadoc;Documentation
 10.07.2013;2.0;2.0-beta8;PRE-RELEASE;;;
