@@ -1,0 +1,14 @@
+\begin{table}
+\caption{Results for JUnit}
+\label{tab:...}
+\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}p{3cm}}
+\toprule
+ & Classification name & Accuracy & Precision & Recall & F1-score \\
+\midrule
+0 & RandomForestClassifier & 0.562 & 0.265 & 0.296 & 0.277 \\
+1 & SVC & 0.521 & 0.315 & 0.246 & 0.237 \\
+2 & VotingClassifier & 0.521 & 0.312 & 0.247 & 0.239 \\
+3 & StackingClassifier & 0.542 & 0.337 & 0.254 & 0.247 \\
+\bottomrule
+\end{tabular}
+\end{table}

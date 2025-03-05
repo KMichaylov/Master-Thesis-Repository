@@ -1,0 +1,14 @@
+\begin{table}
+\caption{Results for Project_Lombok}
+\label{tab:...}
+\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}p{3cm}}
+\toprule
+ & Classification name & Accuracy & Precision & Recall & F1-score \\
+\midrule
+0 & RandomForestClassifier & 0.726 & 0.292 & 0.290 & 0.289 \\
+1 & SVC & 0.702 & 0.332 & 0.239 & 0.232 \\
+2 & VotingClassifier & 0.714 & 0.271 & 0.255 & 0.243 \\
+3 & StackingClassifier & 0.714 & 0.333 & 0.255 & 0.240 \\
+\bottomrule
+\end{tabular}
+\end{table}
