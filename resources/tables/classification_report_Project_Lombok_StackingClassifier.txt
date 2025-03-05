@@ -3,21 +3,19 @@
 \label{tab:...}
 \begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}p{3cm}}
 \toprule
-precision & recall & f1-score & support \\
+ & precision & recall & f1-score & support \\
+category &  &  &  &  \\
 \midrule
-0.579 & 0.733 & 0.647 & 15.000 \\
-0.750 & 0.941 & 0.835 & 51.000 \\
-1.000 & 0.111 & 0.200 & 9.000 \\
-0.000 & 0.000 & 0.000 & 1.000 \\
-0.000 & 0.000 & 0.000 & 0.000 \\
-0.000 & 0.000 & 0.000 & 3.000 \\
-0.000 & 0.000 & 0.000 & 0.000 \\
-0.000 & 0.000 & 0.000 & 0.000 \\
-0.000 & 0.000 & 0.000 & 4.000 \\
-0.000 & 0.000 & 0.000 & 1.000 \\
-0.714 & 0.714 & 0.714 & 0.714 \\
-0.233 & 0.179 & 0.168 & 84.000 \\
-0.666 & 0.714 & 0.644 & 84.000 \\
+Add support for a new feature & 0.579 & 0.733 & 0.647 & 15 \\
+Bug fix & 0.750 & 0.941 & 0.835 & 51 \\
+Code redesign & 1.000 & 0.111 & 0.200 & 9 \\
+Deprecate functionality & 0.000 & 0.000 & 0.000 & 1 \\
+Maintainability improvement & 0.000 & 0.000 & 0.000 & 3 \\
+Support for external development tool & 0.000 & 0.000 & 0.000 & 4 \\
+Update dependency & 0.000 & 0.000 & 0.000 & 1 \\
+accuracy & 0.714 & 0.714 & 0.714 & 0 \\
+macro avg & 0.233 & 0.179 & 0.168 & 84 \\
+weighted avg & 0.666 & 0.714 & 0.644 & 84 \\
 \bottomrule
 \end{tabular}
 \end{table}

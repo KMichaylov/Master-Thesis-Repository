@@ -3,23 +3,23 @@
 \label{tab:...}
 \begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}p{3cm}}
 \toprule
-precision & recall & f1-score & support \\
+ & precision & recall & f1-score & support \\
+category &  &  &  &  \\
 \midrule
-0.680 & 0.773 & 0.723 & 66.000 \\
-0.620 & 0.805 & 0.701 & 77.000 \\
-1.000 & 0.125 & 0.222 & 8.000 \\
-1.000 & 0.250 & 0.400 & 4.000 \\
-1.000 & 0.905 & 0.950 & 21.000 \\
-1.000 & 0.353 & 0.522 & 17.000 \\
-0.000 & 0.000 & 0.000 & 5.000 \\
-1.000 & 0.600 & 0.750 & 5.000 \\
-0.000 & 0.000 & 0.000 & 3.000 \\
-0.000 & 0.000 & 0.000 & 0.000 \\
-0.000 & 0.000 & 0.000 & 1.000 \\
-0.556 & 0.714 & 0.625 & 7.000 \\
-0.692 & 0.692 & 0.692 & 0.692 \\
-0.571 & 0.377 & 0.408 & 214.000 \\
-0.708 & 0.692 & 0.664 & 214.000 \\
+Add support for a new feature & 0.680 & 0.773 & 0.723 & 66 \\
+Bug fix & 0.620 & 0.805 & 0.701 & 77 \\
+Code redesign & 1.000 & 0.125 & 0.222 & 8 \\
+Deprecate functionality & 1.000 & 0.250 & 0.400 & 4 \\
+Documentation & 1.000 & 0.905 & 0.950 & 21 \\
+Maintainability improvement & 1.000 & 0.353 & 0.522 & 17 \\
+Memory improvement & 0.000 & 0.000 & 0.000 & 5 \\
+Performance improvement & 1.000 & 0.600 & 0.750 & 5 \\
+Quality assurance & 0.000 & 0.000 & 0.000 & 3 \\
+Support for external development tool & 0.000 & 0.000 & 0.000 & 1 \\
+Update dependency & 0.556 & 0.714 & 0.625 & 7 \\
+accuracy & 0.692 & 0.692 & 0.692 & 0 \\
+macro avg & 0.571 & 0.377 & 0.408 & 214 \\
+weighted avg & 0.708 & 0.692 & 0.664 & 214 \\
 \bottomrule
 \end{tabular}
 \end{table}
