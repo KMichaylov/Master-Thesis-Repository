@@ -1,22 +1,21 @@
 \begin{table}
 \caption{Results for Log4J}
 \label{tab:...}
-\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}p{3cm}}
+\begin{tabular}{p{6cm}p{2cm}p{2cm}p{2cm}p{2cm}}
 \toprule
  & precision & recall & f1-score & support \\
 category &  &  &  &  \\
 \midrule
-Add support for a new feature & 0.696 & 0.889 & 0.780 & 18 \\
-Bug Fix & 0.000 & 0.000 & 0.000 & 6 \\
-Bug fix & 0.500 & 0.895 & 0.642 & 38 \\
-Code redesign & 0.714 & 0.294 & 0.417 & 17 \\
+Add support for a new feature & 0.722 & 0.722 & 0.722 & 18 \\
+Bug fix & 0.553 & 0.955 & 0.700 & 44 \\
+Code redesign & 0.833 & 0.294 & 0.435 & 17 \\
 Documentation & 1.000 & 0.533 & 0.696 & 15 \\
 Maintainability improvement & 1.000 & 0.250 & 0.400 & 8 \\
 Performance improvement & 0.000 & 0.000 & 0.000 & 2 \\
-Update dependency & 1.000 & 0.643 & 0.783 & 14 \\
-accuracy & 0.627 & 0.627 & 0.627 & 0 \\
-macro avg & 0.409 & 0.292 & 0.310 & 118 \\
-weighted avg & 0.684 & 0.627 & 0.594 & 118 \\
+Update dependency & 1.000 & 0.571 & 0.727 & 14 \\
+accuracy & 0.661 & 0.661 & 0.661 & 0 \\
+macro avg & 0.464 & 0.302 & 0.335 & 118 \\
+weighted avg & 0.750 & 0.661 & 0.636 & 118 \\
 \bottomrule
 \end{tabular}
 \end{table}

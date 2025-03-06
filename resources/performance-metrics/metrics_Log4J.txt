@@ -1,14 +1,14 @@
 \begin{table}
 \caption{Results for Log4J}
 \label{tab:...}
-\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}p{3cm}}
+\begin{tabular}{p{6cm}p{2cm}p{2cm}p{2cm}p{2cm}}
 \toprule
  & Classification name & Accuracy & Precision & Recall & F1-score \\
 \midrule
-0 & RandomForestClassifier & 0.602 & 0.471 & 0.504 & 0.471 \\
-1 & SVC & 0.627 & 0.614 & 0.438 & 0.465 \\
-2 & VotingClassifier & 0.661 & 0.546 & 0.506 & 0.509 \\
-3 & StackingClassifier & 0.653 & 0.622 & 0.462 & 0.486 \\
+0 & RandomForestClassifier & 0.669 & 0.581 & 0.601 & 0.565 \\
+1 & SVC & 0.661 & 0.730 & 0.475 & 0.526 \\
+2 & VotingClassifier & 0.695 & 0.583 & 0.550 & 0.553 \\
+3 & StackingClassifier & 0.669 & 0.714 & 0.499 & 0.539 \\
 \bottomrule
 \end{tabular}
 \end{table}
