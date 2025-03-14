@@ -135,7 +135,7 @@
 21.07.2021;1.3;1.3.1;PATCH;;;;
 21.07.2021;1.3;1.3.1;PATCH;AppCompat now depends on Activity 1.2.4 and Fragment 1.3.6, making the fixes from those releases included by default when using AppCompat 1.3.1. (I8fbec);Dependency Updates;Update version numbers;Update dependency
 18.05.2021;1.3;1.3.0;MINOR;;;;
-18.05.2021;1.3;1.3.0;MINOR;Fixed propagation of android:theme attributes across <include>d layouts on pre-Lollipop devices;Important changes since 1.2.0;Fix wrong implementation;Bug Fix
+18.05.2021;1.3;1.3.0;MINOR;Fixed propagation of android:theme attributes across <include>d layouts on pre-Lollipop devices;Important changes since 1.2.0;Fix wrong implementation;Bug fix
 18.05.2021;1.3;1.3.0;MINOR;Reduced library size by converting many PNG resources to VectorDrawables;Important changes since 1.2.1;Change Implementation;Code redesign
 18.05.2021;1.3;1.3.0;MINOR;Added support for drag-and-drop events to AppCompatEditText with OnReceiveContentListener;Important changes since 1.2.2;Add functionality;Add support for a new feature
 18.05.2021;1.3;1.3.0;MINOR;Updated to support changes to Android 11 window inset handling;Important changes since 1.2.3;Update version numbers;Update dependency

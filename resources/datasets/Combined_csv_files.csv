@@ -2132,7 +2132,7 @@ Backport tintable background and check mark for CheckedTextView (I8575c),Add s
 ,
 "AppCompat now depends on Activity 1.2.4 and Fragment 1.3.6, making the fixes from those releases included by default when using AppCompat 1.3.1. (I8fbec)",Update dependency
 ,
-Fixed propagation of android:theme attributes across <include>d layouts on pre-Lollipop devices,Bug Fix
+Fixed propagation of android:theme attributes across <include>d layouts on pre-Lollipop devices,Bug fix
 Reduced library size by converting many PNG resources to VectorDrawables,Code redesign
 Added support for drag-and-drop events to AppCompatEditText with OnReceiveContentListener,Add support for a new feature
 Updated to support changes to Android 11 window inset handling,Update dependency
