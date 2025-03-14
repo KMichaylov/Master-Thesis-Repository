@@ -33,4 +33,5 @@ if __name__ == '__main__':
                       "Log4J.csv", "Project Lombok.csv"]
     subset_file_names = ["Apache Commons IO.csv", "JUnit.csv",
                          "Log4J.csv", "Project Lombok.csv"]
-    merge_files(all_file_names, "combined_csv_files.csv")
+    merge_files(all_file_names, "Combined_csv_files.csv")
+    merge_files(subset_file_names, "Subset_of_files.csv")
