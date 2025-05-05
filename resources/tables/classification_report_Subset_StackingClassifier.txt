@@ -1,0 +1,25 @@
+\begin{table}
+\caption{Results for Subset}
+\label{tab:...}
+\begin{tabular}{p{6cm}p{2cm}p{2cm}p{2cm}p{2cm}}
+\toprule
+ & precision & recall & f1-score & support \\
+category &  &  &  &  \\
+\midrule
+Add support for a new feature & 0.800 & 0.833 & 0.816 & 120 \\
+Bug fix & 0.615 & 0.916 & 0.736 & 155 \\
+Code redesign & 0.833 & 0.119 & 0.208 & 42 \\
+Deprecate functionality & 1.000 & 0.667 & 0.800 & 3 \\
+Documentation & 1.000 & 0.455 & 0.625 & 22 \\
+Maintainability improvement & 0.667 & 0.095 & 0.167 & 21 \\
+Memory improvement & 0.000 & 0.000 & 0.000 & 1 \\
+Performance improvement & 0.000 & 0.000 & 0.000 & 7 \\
+Quality assurance & 0.000 & 0.000 & 0.000 & 1 \\
+Support for external development tool & 0.000 & 0.000 & 0.000 & 4 \\
+Update dependency & 0.889 & 0.800 & 0.842 & 20 \\
+accuracy & 0.699 & 0.699 & 0.699 & 0 \\
+macro avg & 0.446 & 0.299 & 0.323 & 396 \\
+weighted avg & 0.715 & 0.699 & 0.650 & 396 \\
+\bottomrule
+\end{tabular}
+\end{table}
