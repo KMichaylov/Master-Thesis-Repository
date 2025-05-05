@@ -1,24 +1,24 @@
 \begin{table}
 \caption{Results for Apache_Commons_IO}
 \label{tab:...}
-\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}p{3cm}}
+\begin{tabular}{p{6cm}p{2cm}p{2cm}p{2cm}p{2cm}}
 \toprule
  & precision & recall & f1-score & support \\
 category &  &  &  &  \\
 \midrule
-Add support for a new feature & 0.728 & 0.952 & 0.825 & 62 \\
-Bug fix & 0.694 & 0.676 & 0.685 & 37 \\
-Code redesign & 0.750 & 0.333 & 0.462 & 9 \\
+Add support for a new feature & 0.753 & 0.935 & 0.835 & 62 \\
+Bug fix & 0.676 & 0.676 & 0.676 & 37 \\
+Code redesign & 0.800 & 0.444 & 0.571 & 9 \\
 Deprecate functionality & 1.000 & 1.000 & 1.000 & 1 \\
-Documentation & 1.000 & 0.600 & 0.750 & 10 \\
+Documentation & 1.000 & 0.700 & 0.824 & 10 \\
 Maintainability improvement & 0.750 & 0.333 & 0.462 & 9 \\
-Performance improvement & 1.000 & 1.000 & 1.000 & 1 \\
+Performance improvement & 0.500 & 1.000 & 0.667 & 1 \\
 Quality assurance & 0.000 & 0.000 & 0.000 & 1 \\
 Support for external development tool & 0.000 & 0.000 & 0.000 & 1 \\
 Update dependency & 1.000 & 0.818 & 0.900 & 11 \\
-accuracy & 0.754 & 0.754 & 0.754 & 0 \\
-macro avg & 0.577 & 0.476 & 0.507 & 142 \\
-weighted avg & 0.756 & 0.754 & 0.734 & 142 \\
+accuracy & 0.761 & 0.761 & 0.761 & 0 \\
+macro avg & 0.540 & 0.492 & 0.494 & 142 \\
+weighted avg & 0.762 & 0.761 & 0.745 & 142 \\
 \bottomrule
 \end{tabular}
 \end{table}

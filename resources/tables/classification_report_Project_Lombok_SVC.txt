@@ -1,21 +1,21 @@
 \begin{table}
 \caption{Results for Project_Lombok}
 \label{tab:...}
-\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}p{3cm}}
+\begin{tabular}{p{6cm}p{2cm}p{2cm}p{2cm}p{2cm}}
 \toprule
  & precision & recall & f1-score & support \\
 category &  &  &  &  \\
 \midrule
-Add support for a new feature & 0.600 & 0.600 & 0.600 & 15 \\
-Bug fix & 0.721 & 0.961 & 0.824 & 51 \\
+Add support for a new feature & 0.562 & 0.600 & 0.581 & 15 \\
+Bug fix & 0.716 & 0.941 & 0.814 & 51 \\
 Code redesign & 1.000 & 0.111 & 0.200 & 9 \\
 Deprecate functionality & 0.000 & 0.000 & 0.000 & 1 \\
 Maintainability improvement & 0.000 & 0.000 & 0.000 & 3 \\
 Support for external development tool & 0.000 & 0.000 & 0.000 & 4 \\
 Update dependency & 0.000 & 0.000 & 0.000 & 1 \\
-accuracy & 0.702 & 0.702 & 0.702 & 0 \\
-macro avg & 0.232 & 0.167 & 0.162 & 84 \\
-weighted avg & 0.652 & 0.702 & 0.629 & 84 \\
+accuracy & 0.690 & 0.690 & 0.690 & 0 \\
+macro avg & 0.228 & 0.165 & 0.159 & 84 \\
+weighted avg & 0.643 & 0.690 & 0.619 & 84 \\
 \bottomrule
 \end{tabular}
 \end{table}

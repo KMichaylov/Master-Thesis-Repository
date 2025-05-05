@@ -1,0 +1,26 @@
+\begin{table}
+\caption{Results for Combined}
+\label{tab:...}
+\begin{tabular}{p{6cm}p{2cm}p{2cm}p{2cm}p{2cm}}
+\toprule
+ & precision & recall & f1-score & support \\
+category &  &  &  &  \\
+\midrule
+Add support for a new feature & 0.635 & 0.822 & 0.717 & 180 \\
+Bug fix & 0.698 & 0.774 & 0.734 & 230 \\
+Code redesign & 0.533 & 0.258 & 0.348 & 62 \\
+Deprecate functionality & 1.000 & 0.571 & 0.727 & 7 \\
+Documentation & 0.907 & 0.886 & 0.897 & 44 \\
+Maintainability improvement & 0.682 & 0.333 & 0.448 & 45 \\
+Memory improvement & 0.400 & 0.333 & 0.364 & 6 \\
+Performance improvement & 0.800 & 0.533 & 0.640 & 15 \\
+Quality assurance & 0.000 & 0.000 & 0.000 & 5 \\
+Remove support for external development tool & 0.000 & 0.000 & 0.000 & 3 \\
+Support for external development tool & 0.000 & 0.000 & 0.000 & 5 \\
+Update dependency & 0.930 & 0.870 & 0.899 & 46 \\
+accuracy & 0.694 & 0.694 & 0.694 & 0 \\
+macro avg & 0.507 & 0.414 & 0.444 & 648 \\
+weighted avg & 0.683 & 0.694 & 0.675 & 648 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,14 +1,14 @@
 \begin{table}
 \caption{Results for Appcompat}
 \label{tab:...}
-\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}p{3cm}}
+\begin{tabular}{p{6cm}p{2cm}p{2cm}p{2cm}p{2cm}}
 \toprule
  & Classification name & Accuracy & Precision & Recall & F1-score \\
 \midrule
-0 & RandomForestClassifier & 0.658 & 0.655 & 0.574 & 0.567 \\
-1 & SVC & 0.632 & 0.610 & 0.497 & 0.522 \\
-2 & VotingClassifier & 0.632 & 0.670 & 0.568 & 0.577 \\
-3 & StackingClassifier & 0.658 & 0.655 & 0.574 & 0.572 \\
+0 & RandomForestClassifier & 0.658 & 0.598 & 0.502 & 0.506 \\
+1 & SVC & 0.684 & 0.649 & 0.521 & 0.545 \\
+2 & VotingClassifier & 0.684 & 0.604 & 0.516 & 0.520 \\
+3 & StackingClassifier & 0.684 & 0.602 & 0.512 & 0.517 \\
 \bottomrule
 \end{tabular}
 \end{table}

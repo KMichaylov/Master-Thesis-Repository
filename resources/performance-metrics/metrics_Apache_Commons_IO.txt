@@ -1,14 +1,14 @@
 \begin{table}
 \caption{Results for Apache_Commons_IO}
 \label{tab:...}
-\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}p{3cm}}
+\begin{tabular}{p{6cm}p{2cm}p{2cm}p{2cm}p{2cm}}
 \toprule
  & Classification name & Accuracy & Precision & Recall & F1-score \\
 \midrule
-0 & RandomForestClassifier & 0.746 & 0.675 & 0.599 & 0.623 \\
-1 & SVC & 0.690 & 0.625 & 0.423 & 0.461 \\
-2 & VotingClassifier & 0.754 & 0.692 & 0.571 & 0.608 \\
-3 & StackingClassifier & 0.697 & 0.726 & 0.516 & 0.550 \\
+0 & RandomForestClassifier & 0.761 & 0.646 & 0.613 & 0.606 \\
+1 & SVC & 0.704 & 0.627 & 0.435 & 0.474 \\
+2 & VotingClassifier & 0.761 & 0.648 & 0.591 & 0.593 \\
+3 & StackingClassifier & 0.725 & 0.732 & 0.540 & 0.579 \\
 \bottomrule
 \end{tabular}
 \end{table}

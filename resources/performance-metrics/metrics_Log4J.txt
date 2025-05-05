@@ -5,10 +5,10 @@
 \toprule
  & Classification name & Accuracy & Precision & Recall & F1-score \\
 \midrule
-0 & RandomForestClassifier & 0.669 & 0.581 & 0.601 & 0.565 \\
-1 & SVC & 0.661 & 0.730 & 0.475 & 0.526 \\
-2 & VotingClassifier & 0.695 & 0.583 & 0.550 & 0.553 \\
-3 & StackingClassifier & 0.669 & 0.714 & 0.499 & 0.539 \\
+0 & RandomForestClassifier & 0.695 & 0.595 & 0.615 & 0.579 \\
+1 & SVC & 0.661 & 0.712 & 0.484 & 0.528 \\
+2 & VotingClassifier & 0.703 & 0.587 & 0.558 & 0.558 \\
+3 & StackingClassifier & 0.653 & 0.704 & 0.483 & 0.522 \\
 \bottomrule
 \end{tabular}
 \end{table}

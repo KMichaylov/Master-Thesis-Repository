@@ -6,16 +6,16 @@
  & precision & recall & f1-score & support \\
 category &  &  &  &  \\
 \midrule
-Add support for a new feature & 0.600 & 0.833 & 0.698 & 18 \\
-Bug fix & 0.679 & 0.818 & 0.742 & 44 \\
+Add support for a new feature & 0.615 & 0.889 & 0.727 & 18 \\
+Bug fix & 0.692 & 0.818 & 0.750 & 44 \\
 Code redesign & 0.625 & 0.294 & 0.400 & 17 \\
 Documentation & 0.923 & 0.800 & 0.857 & 15 \\
 Maintainability improvement & 0.333 & 0.250 & 0.286 & 8 \\
 Performance improvement & 0.000 & 0.000 & 0.000 & 2 \\
 Update dependency & 0.923 & 0.857 & 0.889 & 14 \\
-accuracy & 0.695 & 0.695 & 0.695 & 0 \\
-macro avg & 0.371 & 0.350 & 0.352 & 118 \\
-weighted avg & 0.684 & 0.695 & 0.675 & 118 \\
+accuracy & 0.703 & 0.703 & 0.703 & 0 \\
+macro avg & 0.374 & 0.355 & 0.355 & 118 \\
+weighted avg & 0.692 & 0.703 & 0.682 & 118 \\
 \bottomrule
 \end{tabular}
 \end{table}

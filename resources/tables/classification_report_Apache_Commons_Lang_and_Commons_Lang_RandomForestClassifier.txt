@@ -1,25 +1,25 @@
 \begin{table}
 \caption{Results for Apache_Commons_Lang_and_Commons_Lang}
 \label{tab:...}
-\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}p{3cm}}
+\begin{tabular}{p{6cm}p{2cm}p{2cm}p{2cm}p{2cm}}
 \toprule
  & precision & recall & f1-score & support \\
 category &  &  &  &  \\
 \midrule
-Add support for a new feature & 0.612 & 0.788 & 0.689 & 66 \\
-Bug fix & 0.701 & 0.610 & 0.653 & 77 \\
+Add support for a new feature & 0.635 & 0.712 & 0.671 & 66 \\
+Bug fix & 0.658 & 0.675 & 0.667 & 77 \\
 Code redesign & 0.500 & 0.250 & 0.333 & 8 \\
-Deprecate functionality & 1.000 & 0.250 & 0.400 & 4 \\
-Documentation & 0.909 & 0.952 & 0.930 & 21 \\
+Deprecate functionality & 0.500 & 0.250 & 0.333 & 4 \\
+Documentation & 0.952 & 0.952 & 0.952 & 21 \\
 Maintainability improvement & 0.909 & 0.588 & 0.714 & 17 \\
 Memory improvement & 1.000 & 0.600 & 0.750 & 5 \\
 Performance improvement & 0.833 & 1.000 & 0.909 & 5 \\
 Quality assurance & 1.000 & 1.000 & 1.000 & 3 \\
 Support for external development tool & 0.000 & 0.000 & 0.000 & 1 \\
-Update dependency & 0.545 & 0.857 & 0.667 & 7 \\
+Update dependency & 0.600 & 0.857 & 0.706 & 7 \\
 accuracy & 0.696 & 0.696 & 0.696 & 0 \\
-macro avg & 0.668 & 0.575 & 0.587 & 214 \\
-weighted avg & 0.715 & 0.696 & 0.690 & 214 \\
+macro avg & 0.632 & 0.574 & 0.586 & 214 \\
+weighted avg & 0.703 & 0.696 & 0.692 & 214 \\
 \bottomrule
 \end{tabular}
 \end{table}
