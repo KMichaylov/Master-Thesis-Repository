@@ -1,4 +1,4 @@
-## Author & Supervisor
+# Author & Supervisor
 - **Author**: Kristiyan Michaylov
 - **Supervisor**: Dr.-Ing. Jacob Krüger
 
@@ -60,3 +60,5 @@ Here is an example for building and environment setup
 
 ## Link to thesis
 TODO:
+
+## Reference
