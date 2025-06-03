@@ -7,6 +7,16 @@ This repository contains the source code and datasets used for the experiments c
 
 The main objective of this research is to **analyse the reasons behind API changes and evaluate their impact on both the functionalities and the architectural design of the APIs.**
 
+## Table of Contents
+
+- [Research Questions](#research-questions)
+- [Methodology](#methodology)
+- [Project Structure](#project-structure-)
+- [Setup and Installation RQ1](#setup-and-installation-rq1)
+- [Setup and Installation RQ2](#setup-and-installation-rq2)
+- [Link to thesis](#link-to-thesis)
+- [Reference](#reference)
+
 ## Research Questions
 - RQ1 : To what extent can an automated machine learning technique analyse
 and categorise the causes of changes in Java APIs?
@@ -31,7 +41,7 @@ Master-Thesis-Repository/ \
 ├── LICENSE                &rarr; Project license \
 └── README.md 
 
-## Setup and Installation
+## Setup and Installation RQ1
 Here is an example for building and environment setup
 
 1. Install virtualenv (if not already installed)
@@ -58,6 +68,9 @@ Here is an example for building and environment setup
 
 7. Run Jupyter Notebook
 `jupyter notebook`
+
+## Setup and Installation RQ2
+TODO: Explain how things should be run for this
 
 ## Link to thesis
 TODO:
