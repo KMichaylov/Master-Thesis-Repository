@@ -15,7 +15,6 @@ The main objective of this research is to **analyse the reasons behind API chang
 - [Setup and Installation RQ1](#setup-and-installation-rq1)
 - [Setup and Installation RQ2](#setup-and-installation-rq2)
 - [Link to thesis](#link-to-thesis)
-- [Reference](#reference)
 
 ## Research Questions
 - RQ1 : To what extent can an automated machine learning technique analyse
@@ -70,9 +69,10 @@ Here is an example for building and environment setup
 `jupyter notebook`
 
 ## Setup and Installation RQ2
-TODO: Explain how things should be run for this
+To run the experiments related to RQ2, please refer to the following GitHub repositories:
+* [arcana](https://github.com/rsatrioadi/arcana)
+* [javapers](https://github.com/rsatrioadi/javapers)
+* [bubbleTea 2.0](https://github.com/rsatrioadi/bubbletea-v2)
 
 ## Link to thesis
-TODO:
-
-## Reference
+TODO, once available online
