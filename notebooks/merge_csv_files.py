@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-
+# Function for merging multiple csv files into one, solely "Changes" and "General Category" are considered.
 def merge_files(file_names, csv_destination_file_name):
     dfs = []
     path = "../resources/datasets"
