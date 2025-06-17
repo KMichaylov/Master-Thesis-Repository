@@ -30,11 +30,11 @@ This included software metrics evaluation, class diagram alternation throughout 
 Below, images illustrating the methodology and training process are depicted.
 
 ![Methodology](Methodology.png)
-**Figure 1.** Diagram capturing an overview of the whole methodology process
+**Figure 1:** Diagram capturing an overview of the whole methodology process
 
 
-![Training Process](Training%20Process.png)
-**Figure 2.** Overview of the training process for classification
+![Training Process](Training Process.png)
+**Figure 2:** Overview of the training process for classification
 
 ## Project structure 
 The structure of the current repository is organised as follows:
@@ -51,29 +51,26 @@ Master-Thesis-Repository/ \
 ## Setup and Installation RQ1
 Here is an example for building and environment setup
 
-1. Install virtualenv (if not already installed)
-`pip install virtualenv`
-
-2. Create a virtual environment
+1. Create a virtual environment
 `python -m venv venv`
 
-3. Activate the virtual environment
+2. Activate the virtual environment
 
     * On macOS/Linux:
     `source venv/bin/activate`
     * On Windows:
     `venv\Scripts\activate`
 
-4. Install and Upgrade pip (if not already done)
+3. Install and Upgrade pip (if not already done)
 `pip install --upgrade pip`
 
-5. Install project dependencies
+4. Install project dependencies
 `pip install -r requirements.txt`
 
-6. Install Jupyter (if not already included)
+5. Install Jupyter (if not already included)
 `pip install notebook`
 
-7. Run Jupyter Notebook
+6. Run Jupyter Notebook
 `jupyter notebook`
 
 ## Setup and Installation RQ2
