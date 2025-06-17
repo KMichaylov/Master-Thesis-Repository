@@ -30,10 +30,12 @@ This included software metrics evaluation, class diagram alternation throughout 
 Below, images illustrating the methodology and training process are depicted.
 
 ![Methodology](Methodology.png)
+<br>
 **Figure 1:** Diagram capturing an overview of the whole methodology process
 
 
 ![Training Process](Training%20Process.png)
+<br>
 **Figure 2:** Overview of the training process for classification
 
 ## Project structure 
