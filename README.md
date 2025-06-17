@@ -26,7 +26,15 @@ in the release log?
 ## Methodology
 We studied the evolution of Java APIs (e.g., JUnit, Lombok, Log4J, Apache Commons IO) by analyzing release log messages and source code from the Maven Repository.
 Machine learning models were used to classify change reasons, while empirical methods examined how functionality and architecture evolve over time.
-This included software metrics evaluation, class diagram alternation throughout evolution, package structure analysis and mapping between release log messages and architecture and functionality.
+This included software metrics evaluation, class diagram alternation throughout evolution, package structure analysis and mapping between release log messages and architecture and functionality. 
+Below, images illustrating the methodology and training process are depicted.
+
+![Methodology](Methodology.png)
+**Figure 1.** Diagram capturing an overview of the whole methodology process
+
+
+![Training Process](Training%20Process.png)
+**Figure 2.** Overview of the training process for classification
 
 ## Project structure 
 The structure of the current repository is organised as follows:
