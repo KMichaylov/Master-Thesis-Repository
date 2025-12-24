@@ -81,5 +81,5 @@ To run the experiments related to RQ2, please refer to the following GitHub repo
 * [javapers](https://github.com/rsatrioadi/javapers)
 * [bubbleTea 2.0](https://github.com/rsatrioadi/bubbletea-v2)
 
-## Link to thesis
-TODO, once available online
+## Final thesis
+The final variant of the thesis is attached in the current repository.
